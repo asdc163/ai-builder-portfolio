@@ -1,0 +1,21 @@
+name: Project inquiry
+description: Describe a product idea or workflow problem using public information only.
+title: "[Project] "
+body:
+  - type: markdown
+    attributes:
+      value: "This is a public issue. Do not include credentials, customer data, budgets, or proprietary documents."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the user and their current workflow in terms you can share publicly.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What should the first usable version do?
+      description: One concrete action and the result you want to observe.
+    validations:
+      required: true
