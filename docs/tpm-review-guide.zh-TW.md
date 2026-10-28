@@ -1,48 +1,31 @@
-# 技術產品經理 TPM 閱讀指南
+# 產品取捨
 
-這裡的 TPM 指 Technical Product Manager，主軸是技術產品規劃與開發。閱讀順序從使用者問題、第一版範圍與 AI 適用性，接到技術界線和驗收證據。
+整理幾個作品裡的決定。它們都發生在使用者流程和技術實作交會的地方。
 
-[English](tpm-review-guide.md) · [AI 能力證據](ai-capability-evidence.zh-TW.md) · [作品集](../README.zh-TW.md)
+[English](tpm-review-guide.md) · [作品](../README.zh-TW.md)
 
-## 先看產品取捨，再看技術堆疊
+## 複習不依賴生成成功
 
-| 產品問題 | 對應作品 | 可以檢查的取捨 |
-| --- | --- | --- |
-| AI 不可用時，學習者還能不能完成複習？ | [TOEFL Vocab 模型串接](ai-capability-evidence.zh-TW.md) | 詞庫與複習核心獨立於選配生成，API 明確處理 AI 未啟用。 |
-| AI demo 要補什麼，才足以判斷能否試行？ | [PM Signal Lab 發布審查](https://github.com/asdc163/pm-signal-lab/tree/main/playbooks/ai-launch-review) | 來源對照、重大失敗、審查責任與決策紀錄；練習材料保持虛構標示。 |
-| 圖片輔助輸入，哪些錯誤能靠軟體檢查？ | [CareLens 原型](ai-capability-evidence.zh-TW.md) | 呼叫模型前的權限與檔案檢查，以及回覆後的結構解析。內容正確性與 mock 模式信任仍需驗證。 |
-| 成員是否需要學會管理流程，才能參加活動？ | [Telegram 交付決策](https://github.com/asdc163/telegram-community-bot-case-study/blob/main/docs/delivery-decisions.md) | 群內參與和群主私訊管理採不同的互動與授權界線。 |
-| 付款出現例外時，使用者還有沒有恢復路徑？ | [訂閱系統交付決策](https://github.com/asdc163/vpn-subscription-case-study/blob/main/docs/delivery-decisions.md) | 保留實收精度、避免重複開通、保留續費餘期，並留下異常款項處理路徑。 |
-| 維運看板應該有多大的執行權？ | [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) | 以本機唯讀方式觀察狀態，動作留在既有 agent 流程。 |
+[TOEFL Vocab](https://github.com/asdc163/toefl-vocab)的詞庫和間隔複習不需要 AI。生成解釋可以增加內容，但接上供應商以後，不應讓整個學習任務都依賴一次模型呼叫成功。
 
-## 一個產品決策怎麼談深
+代價是介面要說清楚更多狀態：沒有啟用、等待逾時，以及上游錯誤。[API handler](ai-capability-evidence.zh-TW.md#toefl-vocab)分開處理這幾種情況。接下來要回答的是，生成內容帶來的學習幫助，能否抵過錯誤、等待和成本。這需要使用者與模型評估。
 
-先說誰要完成什麼，再收斂最小可用流程、不能被破壞的狀態，以及哪一段工作確實需要模型。接著談技術界線和代價，最後走過一個失敗情境，指出用什麼證據驗收。
+## 參與和管理分開
 
-TOEFL Vocab 把選配生成和學習核心分開，因此 AI 服務失效不必阻斷複習。Telegram 案例把「成員能成功參與」和「群主有權管理」分成不同的產品要求。訂閱系統則需要付款頁、帳本、使用資格和客戶端一致，不能只看付款畫面的成功提示。
+[Telegram Bot](https://github.com/asdc163/telegram-community-bot-case-study)讓一般成員留在原群參與，群主透過私訊設定。群主可能在選單開啟後換人，所以每次敏感操作重新檢查身分，也是產品行為的一部分。
 
-這些是現有材料可以檢查的設計選擇，不代表已有使用者訪談或實驗證明市場適配。
+群主多了一次前往私訊的切換，換來的是成員不必理解管理介面就能參與。[案例的交付筆記](https://github.com/asdc163/telegram-community-bot-case-study/blob/main/docs/delivery-decisions.md)另外交代依賴與驗收問題。
 
-## 從驗收走向產品學習
+## 付款出錯，要留恢復路徑
 
-下列是未來可採用的驗證方式，不是已觀察成績，也不是客戶的商業指標。
+[訂閱系統](https://github.com/asdc163/vpn-subscription-case-study)需要處理少付、晚到和到期前續費。帳本保留實收金額，介面則讓人看懂下一步該做什麼。
 
-| 產品切片 | 值得檢查的行為 | 希望回答的問題 |
-| --- | --- | --- |
-| 有選配 AI 的學習流程 | 關閉 AI 仍能複習，生成失敗後能清楚恢復。 | AI 是否增加實際幫助，而沒有阻斷主要任務？ |
-| AI 輔助結構化輸入 | 對照圖片、辨識欄位與人工修正，分開 mock。 | 哪些欄位需要確認？審查者能不能發現錯誤？ |
-| AI 發布審查 | 評分固定版本的真實輸出，分開重大失敗並記錄審查分歧。 | 證據是否足以支持這個有限範圍的試行？ |
-| Bot 參與與管理 | 成員完成參與，舊群主的敏感操作被拒絕。 | 各角色能否完成工作，而不混淆參與和控制？ |
-| 訂閱異常恢復 | 核對例外款項，客戶端顯示正確使用資格。 | 使用者是否理解目前狀態與下一個有效動作？ |
+地址額度用完會阻擋新訂單，但已存在的訂單仍要繼續核款。把這兩種可用性分開，才不會連已經開啟的付款路徑都一起藏起來。[交付筆記](https://github.com/asdc163/vpn-subscription-case-study/blob/main/docs/delivery-decisions.md)保留後續要完成的依賴。
 
-## 技術深度與交接
+## 模型可以替誰做承諾
 
-[AI 能力證據頁](ai-capability-evidence.zh-TW.md)提供固定版本的程式連結。商用交付決策頁則交代系統依賴與責任，不揭露正式拓樸或客戶。[驗證摘要](https://github.com/asdc163/telegram-community-bot-case-study/blob/main/docs/verification.md)保留歷史工程檢查、接收者驗收與正式營運之間的差別。
+[PM Signal Lab 的虛構練習](https://github.com/asdc163/pm-signal-lab/tree/main/playbooks/ai-launch-review)讓助手草擬客服回覆，沒有批准退款的權限。真正要確認的是，回覆到了客戶以前，審查者能不能發現這個越權承諾。
 
-公開程式能直接讀，評估練習可以重新評分或提出異議，商用紀錄透過匿名摘要保留脈絡。利害關係人協商、帶領團隊、時程／預算責任、使用成效與商業結果，仍需要獲准分享的獨立證明。
+練習指出錯誤、暫停試行，再要求用實際輸出重測。人工審查本身也需要證據；在流程圖裡放一個步驟，還不能知道它的效果。
 
-## 可以用於自我介紹的版本
-
-「我把使用者問題和第一版範圍接到技術實作，包含模型整合、AI 評估設計與驗收。公開作品可以檢查具體的產品和技術取捨；商用案例採匿名方式呈現，保護客戶、實作與營運資料。」
-
-這段介紹不自行加入雇主、年資、團隊規模、第三方推薦或量化商業成果。
+這些內容說明實作取捨與待驗證問題，不當作客戶研究或商業成效。商用驗證細節列在個別案例。
