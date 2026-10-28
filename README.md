@@ -1,29 +1,38 @@
-# Tommy | AI Builder
+# Tommy | Technical Product Manager & AI Builder
 
-I turn product ideas into working software with AI-assisted development. My work spans Telegram automation, subscription flows, learning products, and tools for people operating AI agents.
+I turn user problems into scoped products and work through the technical decisions needed to build them. This portfolio shows product choices alongside LLM integrations, AI evaluation design, failure handling, and engineering handoff.
 
-I work across product scope, interaction design, implementation, debugging, and engineering handoff. I care about what happens after the happy path: a payment arriving late, a bot losing permissions, or the next owner restoring a service.
+[AI capability evidence](docs/ai-capability-evidence.md) · [TPM review guide](docs/tpm-review-guide.md) · [繁體中文](README.zh-TW.md)
 
-[繁體中文](README.zh-TW.md) · [How I build](docs/how-i-build.md) · [Publication policy](docs/publication-policy.md)
+## Start with the evidence
+
+- **LLM integration:** TOEFL Vocab has server-side Gemini handlers with JSON-shaped output requests, timeout handling, and a core learning flow that works without AI. CareLens explores image-to-structured-data with Claude and runtime schema checks.
+- **AI evaluation design:** PM Signal Lab contains an inspectable launch-review exercise with source policies, failure cases, a scoring key, and a decision template. Its sample responses are authored practice material.
+- **Technical delivery:** The commercial cases show how I handled payment state, current-role authorization, uncertain delivery, and transfer responsibilities. Their implementations stay private.
+
+The [evidence map](docs/ai-capability-evidence.md) links these statements to versioned public files and explains what each artifact can support.
 
 ## Selected work
 
-| Project | The problem I worked on | What you can inspect |
+| Project | What to inspect | Status and boundary |
 | --- | --- | --- |
-| [Telegram Community Bot](https://github.com/asdc163/telegram-community-bot-case-study) | Let members participate in their group while the group owner manages sensitive actions in private. | Anonymized case study, role boundaries, delivery recovery, and handoff decisions. Commercial implementation stays private. |
-| [VPN Subscription System](https://github.com/asdc163/vpn-subscription-case-study) | Connect account status, subscription checkout, renewals, and client access without losing track of exceptional payments. | Anonymized case study, lifecycle diagrams, engineering decisions, and verification limits. Commercial implementation stays private. |
-| [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) | Help an operator inspect tasks, schedules, configuration, and logs from a local agent workspace. | Public source and setup instructions for a read-only dashboard. |
-| [TOEFL Vocab](https://github.com/asdc163/toefl-vocab) | Make vocabulary review and progress available offline, with optional AI extensions. | Public source, dataset notes, and spaced-repetition implementation. |
-| [PM Signal Lab](https://github.com/asdc163/pm-signal-lab) | Keep a product claim attached to its source and choose a test worth running. | Public PM skills, fictional practice cases, and a browser worksheet. |
+| [PM Signal Lab](https://github.com/asdc163/pm-signal-lab) | AI evaluation cases, critical-failure reasoning, source-linked decisions, and portable PM skills. | Public practice artifacts and a browser worksheet; no measured model benchmark is claimed. |
+| [TOEFL Vocab](https://github.com/asdc163/toefl-vocab) | Gemini integration, structured response requests, upstream errors, and an offline learning core. | Public source; current provider execution and learning outcomes were not tested in this review. |
+| [CareLens](https://github.com/asdc163/carelens) | A multimodal prototype: image upload, access checks, Claude requests, and Zod response parsing. | Public prototype with a no-key mock path; no clinical reliability claim. |
+| [Telegram Community Bot](https://github.com/asdc163/telegram-community-bot-case-study) | Role boundaries, persistent delivery, exception handling, and ownership transfer. | Anonymized commercial case study; source and operations stay private. |
+| [VPN Subscription System](https://github.com/asdc163/vpn-subscription-case-study) | Subscription/payment state, client coordination, dependencies, and release acceptance. | Anonymized commercial engineering handoff; production operation needs separate evidence. |
+| [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) | Local agent-workspace visibility and a read-only operational boundary. | Public source under another account I maintain; it does not execute agent actions. |
 
-## What AI Builder means in my work
+## The Technical Product Manager perspective
 
-I use AI to help scope, implement, investigate, and review software. The product gets a model-backed feature when the task calls for it. The Telegram case uses deterministic rules; the VPN case focuses on account, payment, and network-client engineering.
+The [review guide](docs/tpm-review-guide.md) connects each case to a user problem, a scope decision, a technical dependency, and an acceptance question. It gives a technical reviewer something specific to discuss, including where private evidence ends and where a new acceptance run is needed.
 
-The public-source projects above belong to separate accounts I maintain. This portfolio is the index; each repository remains the source for its own setup, license, and current status. Listings were reviewed on 2026-10-27; this review did not rerun their applications or certify their live demos.
+I use AI during development and review. I also implement model-backed features where the workflow benefits from them. The Telegram and VPN cases use deterministic product logic; their AI connection is the development method.
 
 ## Working together
 
-Useful starting points are a product idea that needs a first usable version, a Telegram workflow, or an existing tool with confusing behavior and an unclear handoff.
+For a technical role discussion, begin with the evidence map and choose one case to examine in depth. For a product idea or workflow problem, [open a public project inquiry](https://github.com/asdc163/ai-builder-portfolio/issues/new?template=project-inquiry.yml) with information you can share publicly.
 
-[Open a public project inquiry](https://github.com/asdc163/ai-builder-portfolio/issues/new?template=project-inquiry.yml). Share the problem and desired outcome. Keep credentials, customer records, budgets, and proprietary documents out of public issues.
+[How I build](docs/how-i-build.md) · [Publication policy](docs/publication-policy.md)
+
+Reviewed on 2026-10-28 against public source snapshots and existing private case records. This portfolio review did not rerun model providers, commercial services, or the linked product applications.

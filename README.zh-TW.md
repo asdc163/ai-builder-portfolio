@@ -1,29 +1,38 @@
-# Tommy | AI Builder
+# Tommy | Technical Product Manager & AI Builder
 
-我用 AI 協助開發，把產品想法做成能操作、能測試、能交接的軟體。近期作品包含 Telegram 社群工具、訂閱付款與網路客戶端，也持續做學習產品和 AI agent 維運工具。
+我的主軸是技術產品規劃與開發：從使用者問題收斂第一版，再處理產品流程、模型整合、品質評估與工程交接。這份作品集把產品取捨和能檢查的 AI 技術證據放在一起。
 
-我的工作從第一版範圍、操作流程一路到實作、除錯與交接。特別在意正常流程以外的情況：付款晚到怎麼處理、Bot 權限變了怎麼辦，以及接手的人能不能把服務恢復起來。
+[AI 能力與程式證據](docs/ai-capability-evidence.zh-TW.md) · [TPM 閱讀指南](docs/tpm-review-guide.zh-TW.md) · [English](README.md)
 
-[English](README.md) · [開發方式](docs/how-i-build.md) · [公開原則](docs/publication-policy.md)
+## 先看可以檢查的證據
+
+- **模型串接：** TOEFL Vocab 有伺服器端 Gemini handler、JSON 回覆格式請求、逾時與上游錯誤處理，核心學習流程不依賴 AI。CareLens 則探索圖片轉結構化資料，使用 Claude 和執行期 schema 檢查。
+- **AI 評估設計：** PM Signal Lab 提供來源規則、失敗案例、評分標準與發布決策範本。範例回覆是人工撰寫的練習材料。
+- **技術交付：** 商用案例呈現付款狀態、即時角色授權、結果不明的投遞，以及移交責任的處理方式。實際程式與營運資料保留私有。
+
+[能力證據頁](docs/ai-capability-evidence.zh-TW.md)把每個主張連到固定版本的公開檔案，也標示證據能支持到哪裡。
 
 ## 精選作品
 
-| 作品 | 解決的問題 | 可以公開檢視的內容 |
+| 作品 | 適合檢查什麼 | 狀態與範圍 |
 | --- | --- | --- |
-| [Telegram 社群 Bot](https://github.com/asdc163/telegram-community-bot-case-study) | 成員在原群參與活動，群主透過私訊管理，並處理權限變動與發送失敗。 | 匿名案例、角色界線、投遞恢復及交接設計。商用實作保留私有。 |
-| [VPN 訂閱系統](https://github.com/asdc163/vpn-subscription-case-study) | 串接帳號、付款、續費與連線資格，保留異常款項的追查路徑。 | 匿名案例、生命週期圖、工程取捨與驗證範圍。商用實作保留私有。 |
-| [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) | 在本機查看 agent 工作區的任務、排程、設定與日誌。 | 公開原始碼、設定方式及唯讀邊界。 |
-| [TOEFL Vocab](https://github.com/asdc163/toefl-vocab) | 離線複習單字、記錄學習進度，AI 擴充依需求啟用。 | 公開原始碼、資料來源與間隔複習實作。 |
-| [PM Signal Lab](https://github.com/asdc163/pm-signal-lab) | 把產品判斷連回來源，選出下一個值得做的驗證。 | 公開 PM skills、虛構練習案例與瀏覽器工作表。 |
+| [PM Signal Lab](https://github.com/asdc163/pm-signal-lab) | AI 評估案例、重大失敗判斷、來源對照與 PM skills。 | 公開練習與瀏覽器工作表，不當作模型實測成績。 |
+| [TOEFL Vocab](https://github.com/asdc163/toefl-vocab) | Gemini 串接、結構化回覆請求、上游錯誤與離線學習核心。 | 公開程式；本次未重測供應商或學習成效。 |
+| [CareLens](https://github.com/asdc163/carelens) | 圖片上傳、權限查核、Claude 請求與 Zod 解析。 | 多模態原型，有未設定 key 時的 mock 路徑，不宣稱臨床可靠性。 |
+| [Telegram 社群 Bot](https://github.com/asdc163/telegram-community-bot-case-study) | 角色界線、持久化投遞、異常處理與擁有權交接。 | 匿名商用案例，程式與營運資料不公開。 |
+| [VPN 訂閱系統](https://github.com/asdc163/vpn-subscription-case-study) | 訂閱帳務、客戶端協調、跨系統依賴及發布驗收。 | 匿名工程交付案例，正式營運另需證據。 |
+| [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) | agent 工作區的本機可視性，以及唯讀操作界線。 | 位於我維護的另一個帳號，不執行 agent 動作。 |
 
-## AI 在作品裡的角色
+## 技術產品經理的閱讀角度
 
-AI 是我釐清需求、寫程式、追查問題和檢查成果的方法。產品是否需要模型功能，依實際工作決定。Telegram 案例採規則式邏輯；VPN 案例的重點是帳務、付款和網路客戶端工程。
+[TPM 閱讀指南](docs/tpm-review-guide.zh-TW.md)把作品連到使用者問題、第一版範圍、技術取捨、驗收問題與交接界線。面談時可以挑一個問題深入談，例如「同一筆付款重播怎麼辦」或「Bot 發送結果不明時是否應該重送」。
 
-表中的公開程式分散在我維護的不同帳號。這裡統一提供入口，執行方式、授權與現況仍以各 repo 為準。作品資料於 2026-10-27 檢視，本次沒有重新執行各產品或驗證線上示範。
+我用 AI 協作開發，也依工作需求實作模型功能。Telegram 與 VPN 的產品邏輯採確定性規則，AI 的角色是協助工程工作。
 
-## 合作入口
+## 聯絡與合作
 
-適合找我討論的題目：需要第一版的產品想法、Telegram 操作流程，或需要整理行為與交接方式的既有工具。
+技術職務交流可以從能力證據頁開始，再選一個案例討論。產品想法或操作問題可透過[公開專案詢問](https://github.com/asdc163/ai-builder-portfolio/issues/new?template=project-inquiry.yml)描述可公開的部分；憑證、客戶資料、預算與商業文件請勿放入 issue。
 
-[提出公開的專案詢問](https://github.com/asdc163/ai-builder-portfolio/issues/new?template=project-inquiry.yml)，先描述問題和希望完成的結果。公開 issue 請勿放憑證、客戶資料、預算或商業文件。
+[開發方式](docs/how-i-build.md) · [公開原則](docs/publication-policy.md)
+
+本次於 2026-10-28 對照公開程式版本與既有私有案例紀錄整理，沒有重新呼叫模型、啟動商用服務或執行各產品。
