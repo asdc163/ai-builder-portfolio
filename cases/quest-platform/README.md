@@ -12,14 +12,7 @@ Participants can submit evidence, read a review reason and send a correction. Op
 
 An unmet condition, a provider failure and a submission waiting for human review have different next actions. The interface follows the backend state so a retry does not imply that the participant has completed the task.
 
-```mermaid
-flowchart LR
-    Task[Available task] --> Submit[Submit evidence]
-    Submit --> Review[Operator review]
-    Review -->|Correction needed| Revise[Reason and resubmission]
-    Revise --> Review
-    Review -->|Approved| Record[Record progress and points]
-```
+![Conceptual workflow](flow.en.svg)
 
 Conceptual flow, rewritten for this case. It contains no client records or production identifiers.
 

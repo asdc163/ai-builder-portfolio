@@ -12,14 +12,7 @@
 
 條件未達成、外部服務失敗、等待人工審核，各自需要不同的下一步。介面依後端狀態呈現；按下重試，不代表任務已經完成。
 
-```mermaid
-flowchart LR
-    Task[可參與的任務] --> Submit[提交證明]
-    Submit --> Review[後台審核]
-    Review -->|需要補件| Revise[原因與重新提交]
-    Revise --> Review
-    Review -->|核准| Record[記錄進度與積分]
-```
+![匿名概念流程圖](flow.zh-TW.svg)
 
 這是為作品集重寫的概念流程，不含客戶紀錄或正式環境識別資訊。
 

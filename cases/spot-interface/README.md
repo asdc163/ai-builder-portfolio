@@ -12,14 +12,7 @@ The scope includes entering a limit or market order, checking the confirmation, 
 
 Watch-only wallets block trading actions. The user must change to an eligible demonstration wallet to continue. Confirmation and cancellation are part of the behavior being reviewed, alongside the layout.
 
-```mermaid
-flowchart LR
-    Wallet[Select demo wallet] --> Draft[Enter an order]
-    Draft --> Confirm[Review confirmation]
-    Confirm --> Result[Update local order and balance]
-    Result --> Cancel[Cancel an open order]
-    Cancel --> Result
-```
+![Conceptual workflow](flow.en.svg)
 
 This is a conceptual demonstration flow. It contains no real account, price, balance or signing data.
 

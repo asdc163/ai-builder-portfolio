@@ -12,14 +12,7 @@
 
 觀察錢包會阻擋交易操作，必須切換到可操作的示範錢包才能繼續。確認與取消都屬於這次要驗收的行為，和版面一起檢查。
 
-```mermaid
-flowchart LR
-    Wallet[選擇示範錢包] --> Draft[輸入訂單]
-    Draft --> Confirm[確認內容]
-    Confirm --> Result[更新本機訂單與餘額]
-    Result --> Cancel[撤銷掛單]
-    Cancel --> Result
-```
+![匿名概念流程圖](flow.zh-TW.svg)
 
 這是概念性的示範流程，不含真實帳號、價格、餘額或簽名資料。
 
