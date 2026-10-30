@@ -28,4 +28,16 @@ In [PM Signal Lab's fictional review](https://github.com/asdc163/pm-signal-lab/t
 
 The exercise names the failure, holds the pilot and asks for a retest with actual outputs. A human-review step needs evidence of its own. Putting one in a diagram does not tell us how well it works.
 
+## Let an operator recover without duplicating points
+
+In the [quest platform](../cases/quest-platform/README.md), losing a response after a points adjustment leaves the operator unsure what happened. Repeating the same request resolves to the recorded result instead of making another adjustment. Permission checks, the ledger and the audit entry belong to the same decision path.
+
+The case also follows a rejected submission back through correction and review. Defining the next action matters as much as naming the failure state.
+
+## Preserve a filled order when the wallet changes
+
+The [spot interface](../cases/spot-interface/README.md) is a demonstration, but its local state still has to be coherent. An older session snapshot could overwrite a just-filled order. Computing wallet transitions from the current reducer state fixes the ordering problem without replacing the whole session during ordinary navigation.
+
+Native layout checks and state-model regressions answer different questions. The case keeps those records separate, along with the boundary between simulated trading and a real transaction service.
+
 These examples describe implementation choices and proposed evaluation questions. They do not report customer-study results or business impact. Commercial validation details are linked from the individual cases.

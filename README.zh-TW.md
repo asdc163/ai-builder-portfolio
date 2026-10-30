@@ -4,6 +4,18 @@
 
 [LinkedIn](https://www.linkedin.com/in/chia-en/) · [English](README.md)
 
+## 近期實作
+
+### [社群任務平台](cases/quest-platform/README.zh-TW.md)
+
+從參與者提交證明，到後台審核、積分與例外處理。案例包含回應遺失後的重試、附件權限，以及在新環境檢查交付包的過程。
+
+### [現貨交易介面](cases/spot-interface/README.zh-TW.md)
+
+供產品審查的 React Native 示範版，包含本機訂單狀態與錢包切換。案例說明舊狀態覆蓋的問題，以及分開記錄的 iOS、Android 驗證。所有交易均為模擬。
+
+這兩份是匿名案例。實作、客戶素材和交付檔維持私有。
+
 ## 公開作品
 
 ### [TOEFL Vocab](https://github.com/asdc163/toefl-vocab)

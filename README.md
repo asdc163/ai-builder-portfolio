@@ -4,6 +4,18 @@ I'm Tommy, a technical product manager who also builds software. I work on learn
 
 [LinkedIn](https://www.linkedin.com/in/chia-en/) · [繁體中文](README.zh-TW.md)
 
+## Recent builds
+
+### [Community quest platform](cases/quest-platform/README.md)
+
+Participant tasks and an operator workspace, from evidence submission to review, points and recovery. The case covers a lost-response retry, attachment access and checking the handoff package in a fresh environment.
+
+### [Spot trading interface](cases/spot-interface/README.md)
+
+A React Native trading demo for product review, with local order state and wallet switching. The case explains a stale-state bug and the separate iOS and Android verification records. All trading is simulated.
+
+These are anonymized case studies. The implementations, client materials and delivery artifacts remain private.
+
 ## Public projects
 
 ### [TOEFL Vocab](https://github.com/asdc163/toefl-vocab)
