@@ -6,6 +6,10 @@
 
 ## 近期實作
 
+### [節點服務手機介面](cases/node-interface/README.zh-TW.md)
+
+可嵌入宿主的 React Native 模組，與驗收 App 分開。案例說明宿主責任、報價改變後的重新確認，以及視覺修整時如何保住觸控範圍。
+
 ### [社群任務平台](cases/quest-platform/README.zh-TW.md)
 
 從參與者提交證明，到後台審核、積分與例外處理。案例包含回應遺失後的重試、附件權限，以及在新環境檢查交付包的過程。

@@ -6,6 +6,10 @@ I'm Tommy, a technical product manager who also builds software. I work on learn
 
 ## Recent builds
 
+### [Node service mobile interface](cases/node-interface/README.md)
+
+An embeddable React Native module with a separate acceptance app. The case covers host responsibilities, stale quote confirmation and keeping touch targets usable during visual polish.
+
 ### [Community quest platform](cases/quest-platform/README.md)
 
 Participant tasks and an operator workspace, from evidence submission to review, points and recovery. The case covers a lost-response retry, attachment access and checking the handoff package in a fresh environment.

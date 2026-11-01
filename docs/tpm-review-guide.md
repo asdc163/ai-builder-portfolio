@@ -40,4 +40,10 @@ The [spot interface](../cases/spot-interface/README.md) is a demonstration, but 
 
 Native layout checks and state-model regressions answer different questions. The case keeps those records separate, along with the boundary between simulated trading and a real transaction service.
 
+## Put the integration boundary in the product flow
+
+The [node-service interface](../cases/node-interface/README.md) accepts data, authorization and native capabilities from its host. A separate acceptance app supplies fixtures. Keeping those apart makes it clear which behavior the receiver must provide before the screen can handle real accounts.
+
+An expired quote or changed account revision asks for a new confirmation. An uncertain submission asks for account/history reconciliation. The interface can guide that recovery, while the host remains responsible for the authoritative outcome.
+
 These examples describe implementation choices and proposed evaluation questions. They do not report customer-study results or business impact. Commercial validation details are linked from the individual cases.
