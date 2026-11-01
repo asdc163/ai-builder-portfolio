@@ -6,6 +6,15 @@
 
 [English](README.md) · [作品集](../../README.zh-TW.md)
 
+## 介面片段
+
+歷史 iOS Simulator 節點網路元件；已移除識別碼與數值。
+
+<img src="../../media/node-interface/ios-network.png" width="320" alt="歷史 iOS Simulator 節點網路元件；已移除識別碼與數值。">
+
+[更多畫面與拍攝說明](../../media/README.zh-TW.md#節點服務手機介面)
+
+
 ## 把宿主需要負責的事講清楚
 
 接手的 App 提供服務與原生能力，透過契約傳入帳戶狀態、報價和提交結果。驗收 App 使用本機測試資料；這些資料和測試服務留在模組依賴圖之外。

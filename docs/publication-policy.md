@@ -1,6 +1,6 @@
 # Public portfolio policy
 
-The commercial cases in this portfolio were rewritten for public reading. Their names are generic. The repositories contain authored documentation and conceptual diagrams only.
+The commercial cases in this portfolio were rewritten for public reading. Their names are generic. The repositories contain authored documentation, conceptual diagrams and selected, reviewed interface excerpts.
 
 ## Kept private
 
@@ -17,7 +17,7 @@ Historical validation is labelled as recorded evidence. A local test, simulator 
 
 ## Publishing changes
 
-Review new text and diagrams before committing. Use an explicit file list and a new documentation-only repository; do not import a commercial project's Git history. Check links, secret-shaped strings, identifying terms, and business data before pushing, then read the public result back.
+Review new text, diagrams and every image before committing. Keep unredacted originals and source provenance private. Image exports must burn opaque redactions into RGB pixels, remove identifying metadata, preserve unmasked UI pixels and carry a capture date or an explicit unknown date. Historical or synthetic captures need captions that state their limits. A screenshot is not evidence of an end-to-end service, payment, model result or current production release. Use an explicit file list and a new documentation-only repository; do not import a commercial project's Git history. Check links, secret-shaped strings, identifying terms, and business data before pushing, then read the public result back.
 
 The absence of source files makes these documentation showcases. They do not grant access to or a license for the private applications. Repository documentation carries no open-source license unless one is explicitly added.
 

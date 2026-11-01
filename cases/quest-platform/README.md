@@ -6,6 +6,15 @@ The implementation uses TypeScript, Next.js, a NestJS/Fastify API, PostgreSQL an
 
 [繁體中文](README.zh-TW.md) · [Projects](../../README.md)
 
+## Interface excerpt
+
+Historical local review: a rejection explains the missing evidence and offers a correction entry. Background and time are removed.
+
+<img src="../../media/quest-platform/submission-needs-changes.png" width="320" alt="Historical local review: a rejection explains the missing evidence and offers a correction entry. Background and time are removed.">
+
+[More screens and capture notes](../../media/README.md#community-quest-platform)
+
+
 ## A rejected submission needs a way back
 
 Participants can submit evidence, read a review reason and send a correction. Operators need the task, evidence and prior decision together when they review it again. I kept these as explicit transitions rather than treating every unsuccessful check as the same error.

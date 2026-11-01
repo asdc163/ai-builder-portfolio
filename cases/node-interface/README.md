@@ -6,6 +6,15 @@ The delivery includes an embeddable TypeScript module and an isolated React Nati
 
 [繁體中文](README.zh-TW.md) · [Projects](../../README.md)
 
+## Interface excerpt
+
+Historical iOS Simulator network component. Identifiers and numeric values are removed.
+
+<img src="../../media/node-interface/ios-network.png" width="320" alt="Historical iOS Simulator network component. Identifiers and numeric values are removed.">
+
+[More screens and capture notes](../../media/README.md#node-service-mobile-interface)
+
+
 ## Give the host a clear responsibility
 
 The receiving app supplies the service and native capabilities. Account state, quotes and submission results come through that contract. The acceptance app uses local fixtures; those fixtures are kept outside the module's dependency graph.

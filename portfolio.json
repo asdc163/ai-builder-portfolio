@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-11-01",
+  "languages": [
+    "en",
+    "zh-TW"
+  ],
+  "owner": "Tommy",
+  "purpose": "Personal portfolio; public case studies and reviewed visual excerpts.",
+  "imagePolicy": {
+    "en": "Keep captions and evidence limits with the images. No generative reconstruction was used.",
+    "zh-TW": "使用圖片時保留圖說與證據界線；沒有使用生成工具重畫介面。"
+  },
+  "projects": [
+    {
+      "id": "node-interface",
+      "title": {
+        "en": "Node service mobile interface",
+        "zh-TW": "節點服務手機介面"
+      },
+      "summary": {
+        "en": "A native module that a receiving app can embed without adopting the acceptance host.",
+        "zh-TW": "讓接手團隊能嵌入的原生元件；驗收宿主與正式整合入口分開。"
+      },
+      "userJob": {
+        "en": "Review a quote, confirm an action and inspect a node network on a phone.",
+        "zh-TW": "在手機查看報價、確認操作，並檢視節點網路。"
+      },
+      "contribution": {
+        "en": "Product flow, AI-assisted implementation, integration boundaries and platform acceptance review.",
+        "zh-TW": "產品流程、AI 協作實作、整合邊界與分平台驗收整理。"
+      },
+      "decision": {
+        "en": "A confirmation checks its quote snapshot again; services and navigation remain host responsibilities.",
+        "zh-TW": "確認時重新檢查報價快照；正式服務與導覽由宿主負責。"
+      },
+      "aiScope": {
+        "en": "AI-assisted engineering; the demonstrated product behavior is deterministic.",
+        "zh-TW": "AI 協作開發；展示的產品行為依確定規則執行。"
+      },
+      "deliveryStatus": {
+        "en": "Private frontend handoff with recorded simulator and emulator checks.",
+        "zh-TW": "私人前端交付，保留模擬器與 Emulator 的歷史檢查紀錄。"
+      },
+      "caseUrl": "https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/node-interface",
+      "stack": [
+        "React Native Community CLI",
+        "TypeScript"
+      ],
+      "group": "recent",
+      "limits": {
+        "en": "No physical-device, live wallet, production service or store-release claim.",
+        "zh-TW": "不宣稱已完成實體裝置、真實錢包、正式服務或商店上架驗證。"
+      },
+      "imageIds": [
+        "ios-network",
+        "android-network"
+      ],
+      "coverImageId": "ios-network",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "quest-platform",
+      "title": {
+        "en": "Community quest platform",
+        "zh-TW": "社群任務平台"
+      },
+      "summary": {
+        "en": "Participant submissions and operator review, including retries and corrections.",
+        "zh-TW": "參與者送件與營運審核，包含重試與補件。"
+      },
+      "userJob": {
+        "en": "Complete a task, understand its review state and correct rejected evidence.",
+        "zh-TW": "完成任務、理解審核狀態，並修正被退回的資料。"
+      },
+      "contribution": {
+        "en": "Participant and operator flows, implementation, recovery rules and handoff review.",
+        "zh-TW": "參與者與營運流程、實作、恢復規則與交接審查。"
+      },
+      "decision": {
+        "en": "A retry must not award points twice, and an attachment needs an explicit access boundary.",
+        "zh-TW": "重試不能重複發點；附件必須有明確的存取邊界。"
+      },
+      "aiScope": {
+        "en": "AI-assisted delivery. Local task and review records do not establish live model or provider behavior.",
+        "zh-TW": "AI 協作交付；本機任務及審核紀錄不代表真實模型或外部服務已驗證。"
+      },
+      "deliveryStatus": {
+        "en": "Private implementation handoff; public case with historical local-review screens.",
+        "zh-TW": "私人實作交付；公開匿名案例及歷史本機審查畫面。"
+      },
+      "caseUrl": "https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/quest-platform",
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "NestJS / Fastify",
+        "PostgreSQL",
+        "Background queue"
+      ],
+      "group": "recent",
+      "limits": {
+        "en": "No public hosting, recipient deployment, real-wallet or live-provider claim.",
+        "zh-TW": "不宣稱公開託管、接收方部署、真實錢包或外部服務已完成驗證。"
+      },
+      "imageIds": [
+        "submission-waiting",
+        "submission-needs-changes"
+      ],
+      "coverImageId": "submission-waiting",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "spot-interface",
+      "title": {
+        "en": "Spot trading interface",
+        "zh-TW": "現貨交易介面"
+      },
+      "summary": {
+        "en": "A standalone native frontend demonstration with local order state.",
+        "zh-TW": "可獨立審查的原生前端示範，訂單狀態在本機運作。"
+      },
+      "userJob": {
+        "en": "Enter an order, inspect the result and cancel an open demonstration order.",
+        "zh-TW": "輸入委託、查看結果，並撤銷尚未完成的示範掛單。"
+      },
+      "contribution": {
+        "en": "Screen behavior, state consistency, native handoff and separate platform review.",
+        "zh-TW": "畫面行為、狀態一致性、原生交接與分平台審查。"
+      },
+      "decision": {
+        "en": "Session transitions use current reducer state; native platform adapters are separate from the demo controller.",
+        "zh-TW": "Session 轉換使用 reducer 當下狀態；原生介面與示範控制器分開。"
+      },
+      "aiScope": {
+        "en": "AI-assisted development; quotes, orders and signing are local simulations.",
+        "zh-TW": "AI 協作開發；報價、訂單及簽名均為本機模擬。"
+      },
+      "deliveryStatus": {
+        "en": "Community CLI handoff after an earlier Expo review build.",
+        "zh-TW": "由早期 Expo 審查版遷移至 Community CLI 的前端交付。"
+      },
+      "caseUrl": "https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/spot-interface",
+      "stack": [
+        "React Native Community CLI",
+        "TypeScript"
+      ],
+      "group": "recent",
+      "limits": {
+        "en": "No real funds or trades. Platform checks cover named versions and selected runs, not one final full sweep.",
+        "zh-TW": "沒有真實資產或交易；分平台檢查對應具名版本與選定測試，不當成最終版本單次全套通過。"
+      },
+      "imageIds": [
+        "ios-order-entry",
+        "ios-order-result",
+        "android-large-text"
+      ],
+      "coverImageId": "ios-order-entry",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "toefl-vocab",
+      "title": {
+        "en": "TOEFL Vocab",
+        "zh-TW": "托福單字隨身學"
+      },
+      "summary": {
+        "en": "Offline vocabulary study with optional Gemini extensions.",
+        "zh-TW": "以離線單字學習為核心，Gemini 擴充為選配。"
+      },
+      "userJob": {
+        "en": "Look up a word, understand its family and practice retrieval.",
+        "zh-TW": "查單字、理解詞性家族，並練習主動回想。"
+      },
+      "contribution": {
+        "en": "Learning flow, dictionary organization, optional model paths and AI-assisted implementation.",
+        "zh-TW": "學習流程、詞庫整理、模型選配路徑與 AI 協作實作。"
+      },
+      "decision": {
+        "en": "The core dictionary and review task should remain usable without a model key.",
+        "zh-TW": "核心字典與複習工作不依賴模型金鑰。"
+      },
+      "aiScope": {
+        "en": "Gemini integration exists in public source. These screenshots exercise only the no-key path.",
+        "zh-TW": "公開來源有 Gemini 整合；本次截圖只操作無金鑰流程。"
+      },
+      "deliveryStatus": {
+        "en": "Public source; fresh local dictionary and practice-dialog captures.",
+        "zh-TW": "公開來源；本機補拍字典與練習彈窗。"
+      },
+      "caseUrl": "https://github.com/asdc163/toefl-vocab",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Gemini"
+      ],
+      "group": "public",
+      "limits": {
+        "en": "No provider-quality, learning-outcome or hosted-availability claim from this capture.",
+        "zh-TW": "本次補拍不證明模型品質、學習成效或部署可用性。"
+      },
+      "imageIds": [
+        "word-detail",
+        "quiz-question"
+      ],
+      "coverImageId": "word-detail",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "pm-signal-lab",
+      "title": {
+        "en": "PM Signal Lab",
+        "zh-TW": "PM Signal Lab"
+      },
+      "summary": {
+        "en": "A local-first worksheet and authored exercises for product decisions.",
+        "zh-TW": "以本機工作表及自編練習，整理能被追問的產品決策。"
+      },
+      "userJob": {
+        "en": "Keep the source observation attached while deciding what it can support.",
+        "zh-TW": "判斷一個觀察能支持什麼主張，同時保留原始出處。"
+      },
+      "contribution": {
+        "en": "Source-to-decision workflow, evidence boundaries and an authored AI launch-review exercise.",
+        "zh-TW": "從來源到決策的流程、證據界線，以及自編 AI 上線審查練習。"
+      },
+      "decision": {
+        "en": "A polished response is not enough; unsupported decisions need an explicit review gate.",
+        "zh-TW": "回覆流暢還不夠，缺乏依據的決策需要明確審查。"
+      },
+      "aiScope": {
+        "en": "AI product evaluation material. The published exercise is fictional, not a live-model benchmark.",
+        "zh-TW": "AI 產品評估素材；公開練習為虛構案例，不是真實模型效能測試。"
+      },
+      "deliveryStatus": {
+        "en": "Public source with historical desktop and narrow-screen worksheet captures.",
+        "zh-TW": "公開來源，保留桌面與窄屏工作表的歷史畫面。"
+      },
+      "caseUrl": "https://github.com/asdc163/pm-signal-lab",
+      "stack": [
+        "Local-first worksheet",
+        "Evaluation rubric"
+      ],
+      "group": "public",
+      "limits": {
+        "en": "Screenshots do not establish a fresh hosted release, participant study or growth result.",
+        "zh-TW": "截圖不代表新一輪正式部署、真人研究或成長成效。"
+      },
+      "imageIds": [
+        "first-run-desktop",
+        "first-run-mobile"
+      ],
+      "coverImageId": "first-run-desktop",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "openclaw-dashboard",
+      "title": {
+        "en": "OpenClaw Dashboard",
+        "zh-TW": "OpenClaw Dashboard"
+      },
+      "summary": {
+        "en": "A local dashboard for inspecting an agent workspace without running actions.",
+        "zh-TW": "在本機檢視代理工作區，同時保留唯讀邊界的看板。"
+      },
+      "userJob": {
+        "en": "Inspect workspace state, configuration and recent logs without changing their source.",
+        "zh-TW": "查看工作區狀態、設定及近期日誌，避免改動原始資料。"
+      },
+      "contribution": {
+        "en": "Read-only operations view, parser boundaries and public handoff documentation.",
+        "zh-TW": "唯讀營運介面、解析邊界與公開交接文件。"
+      },
+      "decision": {
+        "en": "Observation should not also grant a route to execute agent actions.",
+        "zh-TW": "檢視工作區不應同時取得執行代理操作的路徑。"
+      },
+      "aiScope": {
+        "en": "Agent-operations tooling. The capture uses a fictional empty workspace, not a live agent run.",
+        "zh-TW": "代理營運工具；截圖使用虛構空白工作區，不是真實代理執行。"
+      },
+      "deliveryStatus": {
+        "en": "Public source; fresh local synthetic-workspace capture.",
+        "zh-TW": "公開來源；本機補拍示範工作區。"
+      },
+      "caseUrl": "https://github.com/altoslab447/openclaw-dashboard",
+      "stack": [
+        "React",
+        "Node.js",
+        "WebSocket"
+      ],
+      "group": "public",
+      "limits": {
+        "en": "No hosted control-plane, authentication or live-agent-performance claim.",
+        "zh-TW": "不宣稱具備託管控制平台、登入保護或真實代理效能。"
+      },
+      "imageIds": [
+        "synthetic-workspace"
+      ],
+      "coverImageId": "synthetic-workspace",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "telegram-community-bot",
+      "title": {
+        "en": "Telegram community bot",
+        "zh-TW": "Telegram 社群營運機器人"
+      },
+      "summary": {
+        "en": "Community participation, private owner controls and uncertain-delivery recovery.",
+        "zh-TW": "社群參與、群主私訊管理，以及投遞結果不明時的恢復。"
+      },
+      "userJob": {
+        "en": "Run a community activity and manage it without granting controls to the wrong role.",
+        "zh-TW": "執行社群活動，同時避免把管理操作交給錯誤角色。"
+      },
+      "contribution": {
+        "en": "Participation rules, role checks, delivery behavior and commercial handoff review.",
+        "zh-TW": "參與規則、角色檢查、投遞行為與商用交接審查。"
+      },
+      "decision": {
+        "en": "Recheck ownership for sensitive actions and preserve unknown delivery outcomes.",
+        "zh-TW": "敏感操作重新核對群主身分，並保留投遞結果不明的狀態。"
+      },
+      "aiScope": {
+        "en": "AI-assisted engineering. Bot rules and delivery decisions are deterministic.",
+        "zh-TW": "AI 協作開發；機器人規則與投遞決策依確定程式規則執行。"
+      },
+      "deliveryStatus": {
+        "en": "Anonymized commercial case; only an earlier operations-menu excerpt is shared.",
+        "zh-TW": "匿名商用案例；畫面僅公開較早的營運選單片段。"
+      },
+      "caseUrl": "https://github.com/asdc163/telegram-community-bot-case-study",
+      "stack": [
+        "Telegram Bot API",
+        "Role checks",
+        "Outbox"
+      ],
+      "group": "commercial",
+      "limits": {
+        "en": "The historical image predates owner-only private management and must not be used as current-flow evidence.",
+        "zh-TW": "歷史圖早於群主專用私訊管理改版，不能當成現行操作證據。"
+      },
+      "imageIds": [
+        "historical-command-inventory"
+      ],
+      "coverImageId": null,
+      "imageStatus": "historical-only",
+      "projectDates": null
+    },
+    {
+      "id": "vpn-subscription",
+      "title": {
+        "en": "VPN subscription system",
+        "zh-TW": "VPN 訂閱系統"
+      },
+      "summary": {
+        "en": "Subscription checkout, payment reconciliation and client-access states.",
+        "zh-TW": "訂閱結帳、付款對帳與客戶端權限狀態。"
+      },
+      "userJob": {
+        "en": "Pay, return to the client and understand whether access is ready or still pending.",
+        "zh-TW": "付款並返回客戶端後，理解權限已就緒或仍待處理。"
+      },
+      "contribution": {
+        "en": "Renewal flow, payment-state boundaries, client recovery and engineering handoff review.",
+        "zh-TW": "續費流程、付款狀態邊界、客戶端恢復與工程交接審查。"
+      },
+      "decision": {
+        "en": "Returning from payment is not settlement; a pending order needs a clear recovery path.",
+        "zh-TW": "從付款頁返回不等於結算完成；未完成訂單需要清楚的恢復入口。"
+      },
+      "aiScope": {
+        "en": "AI-assisted development; payment and access decisions follow deterministic rules.",
+        "zh-TW": "AI 協作開發；付款與權限判斷依確定規則執行。"
+      },
+      "deliveryStatus": {
+        "en": "Anonymized commercial engineering case with historical iOS review excerpts.",
+        "zh-TW": "匿名商用工程案例，附歷史 iOS 審查畫面片段。"
+      },
+      "caseUrl": "https://github.com/asdc163/vpn-subscription-case-study",
+      "stack": [
+        "Subscription state machine",
+        "Payment reconciliation",
+        "iOS client"
+      ],
+      "group": "commercial",
+      "limits": {
+        "en": "No real-funds, physical-device, target-network or consumer-release claim.",
+        "zh-TW": "不宣稱真實資金、實體裝置、目標網路或消費者正式發布已驗證。"
+      },
+      "imageIds": [
+        "membership-renewal",
+        "payment-return-pending"
+      ],
+      "coverImageId": "membership-renewal",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "carelens",
+      "title": {
+        "en": "CareLens",
+        "zh-TW": "CareLens 照護原型"
+      },
+      "summary": {
+        "en": "An image-input care prototype with no-key mocks and seeded demonstration data.",
+        "zh-TW": "圖片輸入的照護原型，具備無金鑰 mock 與預設示範資料。"
+      },
+      "userJob": {
+        "en": "Review an uploaded record and understand the proposed household-care interface.",
+        "zh-TW": "檢視上傳紀錄，理解原型的家庭照護介面。"
+      },
+      "contribution": {
+        "en": "Prototype flows, image-input API boundaries and explicit provider-versus-mock documentation.",
+        "zh-TW": "原型流程、圖片 API 邊界，以及模型與 mock 的明確區分。"
+      },
+      "decision": {
+        "en": "Parse a model response against a schema, and keep a mock result distinct from recognition accuracy.",
+        "zh-TW": "以 schema 解析模型回覆，並把 mock 結果與辨識準確度分開。"
+      },
+      "aiScope": {
+        "en": "Claude image-input integration in source; deterministic mocks without a key.",
+        "zh-TW": "來源含 Claude 圖片輸入整合；無金鑰時使用固定 mock。"
+      },
+      "deliveryStatus": {
+        "en": "Public prototype; existing repository screenshots, capture date unknown.",
+        "zh-TW": "公開原型；使用既有 repository 截圖，拍攝日期不詳。"
+      },
+      "caseUrl": "https://github.com/asdc163/carelens",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Claude",
+        "Zod"
+      ],
+      "group": "secondary",
+      "limits": {
+        "en": "Provider behavior, OCR accuracy, clinical correctness and deployment availability are unverified.",
+        "zh-TW": "模型行為、OCR 準確度、醫療正確性與部署可用性均未驗證。"
+      },
+      "imageIds": [
+        "prototype-landing",
+        "prototype-dashboard"
+      ],
+      "coverImageId": "prototype-landing",
+      "imageStatus": "available",
+      "projectDates": null
+    },
+    {
+      "id": "ethers-v6-codemod",
+      "title": {
+        "en": "ethers-v6-codemod",
+        "zh-TW": "ethers-v6-codemod"
+      },
+      "summary": {
+        "en": "An AST-based JavaScript migration tool.",
+        "zh-TW": "以 AST 進行 JavaScript 程式遷移的工具。"
+      },
+      "userJob": {
+        "en": "Review a bounded source transformation rather than replace text indiscriminately.",
+        "zh-TW": "審查有明確範圍的程式轉換，避免無差別替換文字。"
+      },
+      "contribution": {
+        "en": "Public migration-tool implementation and documentation.",
+        "zh-TW": "公開遷移工具實作與文件。"
+      },
+      "decision": {
+        "en": "Match syntax before changing a source expression.",
+        "zh-TW": "先比對語法，再變更程式表達式。"
+      },
+      "aiScope": {
+        "en": "Engineering tooling; no model-backed runtime is claimed.",
+        "zh-TW": "工程工具；不宣稱執行時具有模型功能。"
+      },
+      "deliveryStatus": {
+        "en": "Public source; command-line tool without a product UI.",
+        "zh-TW": "公開來源；命令列工具，沒有產品 UI。"
+      },
+      "caseUrl": "https://github.com/asdc163/ethers-v6-codemod",
+      "stack": [
+        "JavaScript",
+        "AST"
+      ],
+      "group": "secondary",
+      "limits": {
+        "en": "No fabricated app screen. Tool execution was not rerun for this portfolio update.",
+        "zh-TW": "不為它捏造 App 畫面；本輪作品集更新未重跑工具。"
+      },
+      "imageIds": [],
+      "coverImageId": null,
+      "imageStatus": "not-applicable",
+      "projectDates": null
+    }
+  ],
+  "assets": [
+    {
+      "id": "ios-network",
+      "projectId": "node-interface",
+      "path": "media/node-interface/ios-network.png",
+      "width": 686,
+      "height": 779,
+      "alt": {
+        "en": "Node search and network cards",
+        "zh-TW": "節點搜尋與網路卡片"
+      },
+      "caption": {
+        "en": "Historical iOS component capture. Node identifiers and numeric values are removed.",
+        "zh-TW": "歷史 iOS 元件畫面；已移除節點識別碼與數值。"
+      },
+      "captureDate": "2026-10-31",
+      "platform": "iOS Simulator",
+      "coverEligible": true,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "e9f2a17abbb1af15d3f75bf854ef69bd2a7abcb6833d9b63653dea2b9a2ae2bc"
+    },
+    {
+      "id": "android-network",
+      "projectId": "node-interface",
+      "path": "media/node-interface/android-network.png",
+      "width": 1029,
+      "height": 1240,
+      "alt": {
+        "en": "Android network layout",
+        "zh-TW": "Android 節點網路版面"
+      },
+      "caption": {
+        "en": "A separate Android capture of the same component. Identifiers and numeric values are removed.",
+        "zh-TW": "同一元件的獨立 Android 截圖；已移除識別碼與數值。"
+      },
+      "captureDate": "2026-10-30",
+      "platform": "Android Emulator",
+      "coverEligible": true,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "e485e3b93fb5706ec0d7332a5819e654d63c857d374933567875c6d60395eee3"
+    },
+    {
+      "id": "ios-order-entry",
+      "projectId": "spot-interface",
+      "path": "media/spot-interface/ios-order-entry.png",
+      "width": 650,
+      "height": 1440,
+      "alt": {
+        "en": "Simulated order entry",
+        "zh-TW": "示範下單介面"
+      },
+      "caption": {
+        "en": "Native frontend demonstration. Cropped below the branded header; quote values, balances and custom asset labels are removed.",
+        "zh-TW": "原生純前端示範；裁去品牌標頭，移除報價、餘額及客製資產名稱。"
+      },
+      "captureDate": "2026-10-30",
+      "platform": "iOS Simulator",
+      "coverEligible": true,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "719f9bb47e7613d998690bdc2f321f46118b97352fc3836116d6f3e75d606976"
+    },
+    {
+      "id": "ios-order-result",
+      "projectId": "spot-interface",
+      "path": "media/spot-interface/ios-order-result.png",
+      "width": 1178,
+      "height": 815,
+      "alt": {
+        "en": "Local order confirmation result",
+        "zh-TW": "本機委託建立結果"
+      },
+      "caption": {
+        "en": "A simulated local order, not a real trade. Order values, times, balances and custom asset labels are removed.",
+        "zh-TW": "本機模擬委託，不是真實交易；已移除訂單數值、時間、餘額及客製資產名稱。"
+      },
+      "captureDate": "2026-10-30",
+      "platform": "iOS Simulator",
+      "coverEligible": false,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "95ea0f62d13d961e6a067b8e04d161fee70694f4955847c43e1c3b06e5c5b677"
+    },
+    {
+      "id": "android-large-text",
+      "projectId": "spot-interface",
+      "path": "media/spot-interface/android-large-text.png",
+      "width": 1080,
+      "height": 2185,
+      "alt": {
+        "en": "Narrow layout with larger text",
+        "zh-TW": "窄屏與放大字級"
+      },
+      "caption": {
+        "en": "Historical final responsive-check capture. Financial values are removed; slider percentages are fixed controls.",
+        "zh-TW": "歷史最終版的針對性響應檢查畫面；已移除財務數值，滑桿百分比為固定操作標籤。"
+      },
+      "captureDate": "2026-10-30",
+      "platform": "Android Emulator",
+      "coverEligible": false,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "2585bc2dbf4646b726aecd8840a213e0a6a3dbbece735f8309bd407dcb31d606"
+    },
+    {
+      "id": "submission-waiting",
+      "projectId": "quest-platform",
+      "path": "media/quest-platform/submission-waiting.png",
+      "width": 358,
+      "height": 246,
+      "alt": {
+        "en": "Submission waiting for review",
+        "zh-TW": "送件後等待審核"
+      },
+      "caption": {
+        "en": "Actual task dialog from a local frontend review. Cropped to exclude branding, account context and background data.",
+        "zh-TW": "本機前端審查的實際任務彈窗；裁去品牌、帳戶情境與背景資料。"
+      },
+      "captureDate": "2026-10-30",
+      "platform": "Chrome mobile viewport",
+      "coverEligible": true,
+      "treatment": "crop-only",
+      "sha256": "c5462ebc47cad65b945135a0a590f8c403b885ad34bab43d68585ece1a8152a9"
+    },
+    {
+      "id": "submission-needs-changes",
+      "projectId": "quest-platform",
+      "path": "media/quest-platform/submission-needs-changes.png",
+      "width": 358,
+      "height": 408,
+      "alt": {
+        "en": "Rejection reason and correction entry",
+        "zh-TW": "退件原因與補件入口"
+      },
+      "caption": {
+        "en": "The same task after review requests a correction. Background and review timestamp are removed.",
+        "zh-TW": "同一任務收到補件要求的狀態；已裁去背景並遮蔽審核時間。"
+      },
+      "captureDate": "2026-10-30",
+      "platform": "Chrome mobile viewport",
+      "coverEligible": false,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "2e4cf8ef7b458a827053f0758a596d2b030934617022b1714132423fde7d2f5e"
+    },
+    {
+      "id": "membership-renewal",
+      "projectId": "vpn-subscription",
+      "path": "media/vpn-subscription/membership-renewal.png",
+      "width": 1110,
+      "height": 1010,
+      "alt": {
+        "en": "Renewal plan selection",
+        "zh-TW": "續費方案選擇"
+      },
+      "caption": {
+        "en": "Historical engineering-review UI. Prices and payment-route details are removed; this image does not establish network availability.",
+        "zh-TW": "歷史工程審查畫面；已移除售價與付款路徑，畫面不代表實際網路可用性。"
+      },
+      "captureDate": "2026-10-15",
+      "platform": "iOS Simulator",
+      "coverEligible": true,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "8eb32959b97fae28e9bd36df47b9794576f2e486584646bd1e999453c888d363"
+    },
+    {
+      "id": "payment-return-pending",
+      "projectId": "vpn-subscription",
+      "path": "media/vpn-subscription/payment-return-pending.png",
+      "width": 1088,
+      "height": 585,
+      "alt": {
+        "en": "Payment return with an unfinished order",
+        "zh-TW": "付款返回後的未完成訂單"
+      },
+      "caption": {
+        "en": "An unfinished-order state from historical review. Amounts and time values are removed. No real settlement is demonstrated.",
+        "zh-TW": "歷史審查中的未完成訂單狀態；已移除金額與時間，不代表真實資金結算。"
+      },
+      "captureDate": "2026-10-15",
+      "platform": "iOS Simulator",
+      "coverEligible": false,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "fb58201ad3ba1700de8b9e24a3cd53b7f9ac50eb65d66dbe6d173c6454d27df6"
+    },
+    {
+      "id": "historical-command-inventory",
+      "projectId": "telegram-community-bot",
+      "path": "media/telegram-community-bot/historical-command-inventory.png",
+      "width": 464,
+      "height": 280,
+      "alt": {
+        "en": "Earlier operations menu",
+        "zh-TW": "早期營運功能選單"
+      },
+      "caption": {
+        "en": "Historical excerpt captured before management moved to owner-only private chat. It illustrates feature coverage, not the current permission flow. Branding and chat context are cropped out.",
+        "zh-TW": "群主專用私訊管理改版前的歷史片段，僅說明功能範圍，不代表現行權限流程；已裁去品牌與對話情境。"
+      },
+      "captureDate": "2026-10-13",
+      "platform": "Telegram client",
+      "coverEligible": false,
+      "treatment": "crop-only",
+      "sha256": "5410a5dab6964a17e4fae2e77f717f7f6b6814af3a65722b0281b954255a33c4"
+    },
+    {
+      "id": "first-run-desktop",
+      "projectId": "pm-signal-lab",
+      "path": "media/pm-signal-lab/first-run-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "alt": {
+        "en": "First-run worksheet on desktop",
+        "zh-TW": "桌面首次開啟工作表"
+      },
+      "caption": {
+        "en": "Historical local capture with a labelled fictional interview. UI pixels are unchanged.",
+        "zh-TW": "歷史本機畫面，訪談明確標示為虛構示範；UI 像素未修改。"
+      },
+      "captureDate": "2026-08-16",
+      "platform": "Chrome desktop",
+      "coverEligible": true,
+      "treatment": "metadata-only",
+      "sha256": "d7aa3cef169cde38c4a5f0ff36bda4db608e57d0f56cb1bebd164c662fffec1b"
+    },
+    {
+      "id": "first-run-mobile",
+      "projectId": "pm-signal-lab",
+      "path": "media/pm-signal-lab/first-run-mobile.png",
+      "width": 390,
+      "height": 844,
+      "alt": {
+        "en": "First-run worksheet on a narrow screen",
+        "zh-TW": "窄屏首次開啟工作表"
+      },
+      "caption": {
+        "en": "Historical responsive capture of the same first-run state. UI pixels are unchanged.",
+        "zh-TW": "同一首次開啟狀態的歷史響應畫面；UI 像素未修改。"
+      },
+      "captureDate": "2026-08-16",
+      "platform": "Chrome mobile viewport",
+      "coverEligible": false,
+      "treatment": "metadata-only",
+      "sha256": "747f71e1e71a214ac22a56202dea2f8eafffa13f6ee213bc42d0407cb7c14809"
+    },
+    {
+      "id": "word-detail",
+      "projectId": "toefl-vocab",
+      "path": "media/toefl-vocab/word-detail.png",
+      "width": 450,
+      "height": 610,
+      "alt": {
+        "en": "Dictionary meaning and word family",
+        "zh-TW": "字義、字根與詞性家族"
+      },
+      "caption": {
+        "en": "Fresh local capture from public source, using the no-key dictionary path. Cropped to the upper portion of the dialog. Gemini was not exercised.",
+        "zh-TW": "由公開來源在本機補拍的無金鑰字典流程；裁取彈窗上半部，未執行 Gemini。"
+      },
+      "captureDate": "2026-11-01",
+      "platform": "Chrome desktop",
+      "coverEligible": true,
+      "treatment": "crop-only",
+      "sha256": "067b2571e767805f995e6cde442938e993f17f74524f2f6fac515b00703a06f2"
+    },
+    {
+      "id": "quiz-question",
+      "projectId": "toefl-vocab",
+      "path": "media/toefl-vocab/quiz-question.png",
+      "width": 514,
+      "height": 566,
+      "alt": {
+        "en": "Vocabulary practice question",
+        "zh-TW": "單字練習題"
+      },
+      "caption": {
+        "en": "Fresh local capture with default demonstration progress. No learner records or provider result are shown.",
+        "zh-TW": "本機補拍，使用預設示範進度；不含學習者紀錄或模型回覆。"
+      },
+      "captureDate": "2026-11-01",
+      "platform": "Chrome desktop",
+      "coverEligible": false,
+      "treatment": "crop-only",
+      "sha256": "6f27f0f07a1dde88ad2dbdc9e74b5955fcbcc92bf247644ef58af71474f580ba"
+    },
+    {
+      "id": "synthetic-workspace",
+      "projectId": "openclaw-dashboard",
+      "path": "media/openclaw-dashboard/synthetic-workspace.png",
+      "width": 1470,
+      "height": 717,
+      "alt": {
+        "en": "Read-only dashboard with an empty sample workspace",
+        "zh-TW": "唯讀看板與空白示範工作區"
+      },
+      "caption": {
+        "en": "Fresh local capture using an isolated, explicitly fictional workspace. No live agent, private configuration or operational log is shown. UI pixels are unchanged.",
+        "zh-TW": "在隔離、明示虛構的工作區補拍；沒有真實代理、私人設定或營運日誌，UI 像素未修改。"
+      },
+      "captureDate": "2026-11-01",
+      "platform": "Chrome desktop",
+      "coverEligible": true,
+      "treatment": "metadata-only",
+      "sha256": "8b428d80730d6f564195747f70b034439f1dd79b37a5cd931dc36f1cd857c084"
+    },
+    {
+      "id": "prototype-landing",
+      "projectId": "carelens",
+      "path": "media/carelens/prototype-landing.png",
+      "width": 2880,
+      "height": 1800,
+      "alt": {
+        "en": "Care prototype landing page",
+        "zh-TW": "照護原型首頁"
+      },
+      "caption": {
+        "en": "Existing public prototype image with fictional sample content. Capture date is unknown; OCR and clinical performance were not validated. UI pixels are unchanged.",
+        "zh-TW": "既有公開原型圖，內容為虛構示範；拍攝日期不詳，未驗證 OCR 或醫療效能，UI 像素未修改。"
+      },
+      "captureDate": null,
+      "platform": "Repository screenshot",
+      "coverEligible": true,
+      "treatment": "metadata-only",
+      "sha256": "7a3283a94f07b3333412f87aaec7afbe6596c0cc22d3a2e9ad7bedf460de7e3a"
+    },
+    {
+      "id": "prototype-dashboard",
+      "projectId": "carelens",
+      "path": "media/carelens/prototype-dashboard.png",
+      "width": 2360,
+      "height": 2220,
+      "alt": {
+        "en": "Prototype household overview",
+        "zh-TW": "原型家庭照護總覽"
+      },
+      "caption": {
+        "en": "Existing prototype screenshot, cropped to the main panel. Sample names, email and numeric fields are removed. It is not clinical or model-performance evidence.",
+        "zh-TW": "既有原型截圖，裁取主要內容區；已移除示範姓名、email 與數值，不作為醫療或模型效能證據。"
+      },
+      "captureDate": null,
+      "platform": "Repository screenshot",
+      "coverEligible": false,
+      "treatment": "crop-and-opaque-mask",
+      "sha256": "2ea55b2452bc494e223329515b1ffed73eb4173ad5c96913d4b8b2193dc99ea8"
+    }
+  ]
+}

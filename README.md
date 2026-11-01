@@ -4,6 +4,8 @@ I'm Tommy, a technical product manager who also builds software. I work on learn
 
 [LinkedIn](https://www.linkedin.com/in/chia-en/) · [繁體中文](README.zh-TW.md)
 
+[Product screens](media/README.md) · [Website content and images](media/WEBSITE-HANDOFF.md)
+
 ## Recent builds
 
 ### [Node service mobile interface](cases/node-interface/README.md)

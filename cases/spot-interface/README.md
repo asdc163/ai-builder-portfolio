@@ -2,9 +2,18 @@
 
 A React Native implementation of a supplied trading-interface reference, built for product review and frontend handoff. I worked on the screen behavior, local order model, wallet and network switching, and separate iOS and Android checks.
 
-The app uses TypeScript and Expo. It is a frontend demonstration with simulated quotes, orders and balances. It does not hold funds or send real transactions.
+The current handoff uses TypeScript and React Native Community CLI. The earlier Expo review build remains historical evidence. Quotes, orders and balances are simulated; the app does not hold funds or send real transactions.
 
 [繁體中文](README.zh-TW.md) · [Projects](../../README.md)
+
+## Interface excerpt
+
+Native iOS frontend demonstration. Cropped to the order form; financial values and custom asset labels are removed.
+
+<img src="../../media/spot-interface/ios-order-entry.png" width="320" alt="Native iOS frontend demonstration. Cropped to the order form; financial values and custom asset labels are removed.">
+
+[More screens and capture notes](../../media/README.md#spot-trading-interface)
+
 
 ## The review needs a complete action
 
@@ -24,9 +33,15 @@ I changed normal session transitions to compute from the reducer's current state
 
 That distinction matters for the handoff. A visual match would not have caught this data-consistency problem.
 
+## The receiving team needed a native handoff
+
+The first review package used Expo. After engineering feedback, I moved the handoff to Community CLI and included the native iOS and Android projects. Screens, interaction components, the controller, order model, storage and platform adapters have separate responsibilities.
+
+The receiving team should supply its own identity, market-data, trading and signing services. The local demonstration controller is not a production trading service.
+
 ## iOS and Android were checked separately
 
-The delivery records include selected iOS Simulator journeys and Android Emulator runs, with narrow layouts, larger text, landscape dialogs and keyboard states. The Android review package includes its JavaScript bundle so the reviewer does not need a development server.
+The latest native delivery records include selected iOS Simulator journeys on the final source. Android has a broader native baseline and a separate final responsive check after a toolbar-text fix. The review builds run without a development server. The records include narrow layouts, larger text, landscape dialogs and native export or sharing states.
 
 The records cover different named versions and selected runs, not a single full pass on both platforms. I reviewed those boundaries and the state fix for this case; this portfolio update did not rerun the app. Physical devices, a store release, complete assistive-technology coverage and real trading services remain outside the demonstrated scope.
 
