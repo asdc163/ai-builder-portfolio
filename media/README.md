@@ -8,6 +8,10 @@ Historical captures and local demonstrations do not establish current production
 
 [Website integration notes](WEBSITE-HANDOFF.md)
 
+## Browse projects
+
+[Node service mobile interface](#node-service-mobile-interface) · [Community quest platform](#community-quest-platform) · [Spot trading interface](#spot-trading-interface) · [TOEFL Vocab](#toefl-vocab) · [PM Signal Lab](#pm-signal-lab) · [OpenClaw Dashboard](#openclaw-dashboard) · [Telegram community bot](#telegram-community-bot) · [VPN subscription system](#vpn-subscription-system) · [CareLens](#carelens) · [ethers-v6-codemod](#ethers-v6-codemod)
+
 ## Node service mobile interface
 
 A native module that a receiving app can embed without adopting the acceptance host.
