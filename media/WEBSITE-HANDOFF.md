@@ -4,16 +4,22 @@
 
 ## 先接這兩類內容
 
-- `projects`：中英文名稱、摘要、使用者工作、我的貢獻、關鍵取捨、AI 範圍、交付狀態、技術與證據限制。
+- `projects`：中英文名稱、摘要、使用者工作、我的貢獻、關鍵取捨、模型功能範圍、交付狀態、技術與證據限制。
 - `assets`：相對路徑、原生尺寸、中英文替代文字與圖說、拍攝日期、平台、處理方式及檔案雜湊。
 
 把 `portfolio.json` 與整個 `media/` 放在相同內容根目錄。`assets[].path` 都從這個根目錄解析；在網站產生圖片 URL 時，加上網站的內容路徑即可。不要把 GitHub 的檔案瀏覽頁當成圖片 URL。
 
 每個專案的 `imageIds` 對應 `assets[].id`。`coverImageId` 只選可作為封面的圖；值為 `null` 時，不要自動拿第一張圖補上。
 
+## 首頁選圖
+
+`presentation` 保存這輪的作品排序：PM Signal Lab 的完整來源審查工作表作為主圖，TOEFL 的字義與測驗作為次要畫面。首頁不使用遮罩過多的商用圖、歷史 Telegram 選單或虛構空白工作區作為主視覺。這份資料共 10 個作品、18 張公開圖片。
+
+`presentation.heroImageId` 與 `secondaryImageIds` 對應 `assets[].id`。商用案例圖留給詳情頁，保留日期、去識別與驗證說明。
+
 ## 圖片與文字一起使用
 
-先用 `summary` 說清楚產品，再用 `contribution` 與 `decision` 說明我的工作。呈現 AI 能力時讀取 `aiScope`，避免把確定性自動化寫成模型功能。完整說明仍連回 `caseUrl`。
+先用 `summary` 說清楚產品，再用 `contribution` 與 `decision` 說明我的工作。需要說明模型功能時再讀取 `aiScope`；一般作品卡不用把這個欄位當作標題。完整說明仍連回 `caseUrl`。
 
 網站圖片使用 `alt` 與可見的 `caption`，並帶入 `width`、`height`，避免載入時跳動。保留原圖比例；功能表單、彈窗與響應測試圖不適合一律裁成橫幅。
 

@@ -1,326 +1,177 @@
-# Product screens and cases
+# Product screens
 
-[繁體中文](README.zh-TW.md) · [Projects](../README.md) · [Website data](../portfolio.json)
+Selected real interface captures. Commercial screens are cropped or permanently masked; dates and demo limits are kept beside each image.
 
-These are actual product or prototype captures. Commercial excerpts use crops and opaque redactions; no interface was reconstructed. Captions distinguish dates, platforms and evidence limits.
-
-Historical captures and local demonstrations do not establish current production operation, real settlement or model performance. Project start and end dates were not supplied and are not inferred from image dates.
-
-[Website integration notes](WEBSITE-HANDOFF.md)
-
-## Browse projects
-
-[Node service mobile interface](#node-service-mobile-interface) · [Community quest platform](#community-quest-platform) · [Spot trading interface](#spot-trading-interface) · [TOEFL Vocab](#toefl-vocab) · [PM Signal Lab](#pm-signal-lab) · [OpenClaw Dashboard](#openclaw-dashboard) · [Telegram community bot](#telegram-community-bot) · [VPN subscription system](#vpn-subscription-system) · [CareLens](#carelens) · [ethers-v6-codemod](#ethers-v6-codemod)
-
-## Node service mobile interface
-
-A native module that a receiving app can embed without adopting the acceptance host.
-
-**My work:** Product flow, AI-assisted implementation, integration boundaries and platform acceptance review.
-
-**Decision:** A confirmation checks its quote snapshot again; services and navigation remain host responsibilities.
-
-**AI scope:** AI-assisted engineering; the demonstrated product behavior is deterministic.
-
-No physical-device, live wallet, production service or store-release claim.
-
-[Case / source](https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/node-interface)
-
-### Node search and network cards
-
-iOS Simulator · 2026-10-31 · 686 × 779
-
-Historical iOS component capture. Node identifiers and numeric values are removed.
-
-<img src="node-interface/ios-network.png" width="320" alt="Node search and network cards">
-
-[Open full size](node-interface/ios-network.png)
-
-### Android network layout
-
-Android Emulator · 2026-10-30 · 1029 × 1240
-
-A separate Android capture of the same component. Identifiers and numeric values are removed.
-
-<img src="node-interface/android-network.png" width="320" alt="Android network layout">
-
-[Open full size](node-interface/android-network.png)
-
-## Community quest platform
-
-Participant submissions and operator review, including retries and corrections.
-
-**My work:** Participant and operator flows, implementation, recovery rules and handoff review.
-
-**Decision:** A retry must not award points twice, and an attachment needs an explicit access boundary.
-
-**AI scope:** AI-assisted delivery. Local task and review records do not establish live model or provider behavior.
-
-No public hosting, recipient deployment, real-wallet or live-provider claim.
-
-[Case / source](https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/quest-platform)
-
-### Submission waiting for review
-
-Chrome mobile viewport · 2026-10-30 · 358 × 246
-
-Actual task dialog from a local frontend review. Cropped to exclude branding, account context and background data.
-
-<img src="quest-platform/submission-waiting.png" width="358" alt="Submission waiting for review">
-
-[Open full size](quest-platform/submission-waiting.png)
-
-### Rejection reason and correction entry
-
-Chrome mobile viewport · 2026-10-30 · 358 × 408
-
-The same task after review requests a correction. Background and review timestamp are removed.
-
-<img src="quest-platform/submission-needs-changes.png" width="320" alt="Rejection reason and correction entry">
-
-[Open full size](quest-platform/submission-needs-changes.png)
-
-## Spot trading interface
-
-A standalone native frontend demonstration with local order state.
-
-**My work:** Screen behavior, state consistency, native handoff and separate platform review.
-
-**Decision:** Session transitions use current reducer state; native platform adapters are separate from the demo controller.
-
-**AI scope:** AI-assisted development; quotes, orders and signing are local simulations.
-
-No real funds or trades. Platform checks cover named versions and selected runs, not one final full sweep.
-
-[Case / source](https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/spot-interface)
-
-### Simulated order entry
-
-iOS Simulator · 2026-10-30 · 650 × 1440
-
-Native frontend demonstration. Cropped below the branded header; quote values, balances and custom asset labels are removed.
-
-<img src="spot-interface/ios-order-entry.png" width="320" alt="Simulated order entry">
-
-[Open full size](spot-interface/ios-order-entry.png)
-
-### Local order confirmation result
-
-iOS Simulator · 2026-10-30 · 1178 × 815
-
-A simulated local order, not a real trade. Order values, times, balances and custom asset labels are removed.
-
-<img src="spot-interface/ios-order-result.png" width="560" alt="Local order confirmation result">
-
-[Open full size](spot-interface/ios-order-result.png)
-
-### Narrow layout with larger text
-
-Android Emulator · 2026-10-30 · 1080 × 2185
-
-Historical final responsive-check capture. Financial values are removed; slider percentages are fixed controls.
-
-<img src="spot-interface/android-large-text.png" width="320" alt="Narrow layout with larger text">
-
-[Open full size](spot-interface/android-large-text.png)
-
-## TOEFL Vocab
-
-Offline vocabulary study with optional Gemini extensions.
-
-**My work:** Learning flow, dictionary organization, optional model paths and AI-assisted implementation.
-
-**Decision:** The core dictionary and review task should remain usable without a model key.
-
-**AI scope:** Gemini integration exists in public source. These screenshots exercise only the no-key path.
-
-No provider-quality, learning-outcome or hosted-availability claim from this capture.
-
-[Case / source](https://github.com/asdc163/toefl-vocab)
-
-### Dictionary meaning and word family
-
-Chrome desktop · 2026-11-01 · 450 × 610
-
-Fresh local capture from public source, using the no-key dictionary path. Cropped to the upper portion of the dialog. Gemini was not exercised.
-
-<img src="toefl-vocab/word-detail.png" width="320" alt="Dictionary meaning and word family">
-
-[Open full size](toefl-vocab/word-detail.png)
-
-### Vocabulary practice question
-
-Chrome desktop · 2026-11-01 · 514 × 566
-
-Fresh local capture with default demonstration progress. No learner records or provider result are shown.
-
-<img src="toefl-vocab/quiz-question.png" width="320" alt="Vocabulary practice question">
-
-[Open full size](toefl-vocab/quiz-question.png)
+[Portfolio](../README.md) · [Website handoff](WEBSITE-HANDOFF.md)
 
 ## PM Signal Lab
 
 A local-first worksheet and authored exercises for product decisions.
 
-**My work:** Source-to-decision workflow, evidence boundaries and an authored AI launch-review exercise.
+Worksheet design, source review and product decision exercises. A polished response is not enough; unsupported decisions need an explicit review gate.
 
-**Decision:** A polished response is not enough; unsupported decisions need an explicit review gate.
+<a href="pm-signal-lab/source-review-desktop.png"><img src="pm-signal-lab/source-review-desktop.png" width="820" alt="PM Signal Lab worksheet with a fictional support review and expandable source records"></a>
 
-**AI scope:** AI product evaluation material. The published exercise is fictional, not a live-model benchmark.
+Desktop worksheet with fictional sample notes. Historical local capture, August 16, 2026. · Chrome desktop · 2026-08-16
 
-Screenshots do not establish a fresh hosted release, participant study or growth result.
+<a href="pm-signal-lab/first-run-desktop.png"><img src="pm-signal-lab/first-run-desktop.png" width="820" alt="First-run worksheet on desktop"></a>
 
-[Case / source](https://github.com/asdc163/pm-signal-lab)
+Historical local capture with a labelled fictional interview. UI pixels are unchanged. · Chrome desktop · 2026-08-16
 
-### First-run worksheet on desktop
+<a href="pm-signal-lab/first-run-mobile.png"><img src="pm-signal-lab/first-run-mobile.png" width="320" alt="First-run worksheet on a narrow screen"></a>
 
-Chrome desktop · 2026-08-16 · 1440 × 1000
+Historical responsive capture of the same first-run state. UI pixels are unchanged. · Chrome mobile viewport · 2026-08-16
 
-Historical local capture with a labelled fictional interview. UI pixels are unchanged.
+Public source with historical desktop and narrow-screen worksheet captures. Screenshots do not establish a fresh hosted release, participant study or growth result.
 
-<img src="pm-signal-lab/first-run-desktop.png" width="560" alt="First-run worksheet on desktop">
+[Project details](https://github.com/asdc163/pm-signal-lab)
 
-[Open full size](pm-signal-lab/first-run-desktop.png)
+## TOEFL Vocab
 
-### First-run worksheet on a narrow screen
+Offline vocabulary study with optional Gemini extensions.
 
-Chrome mobile viewport · 2026-08-16 · 390 × 844
+Study flow, dictionary data and optional Gemini features. The core dictionary and review task should remain usable without a model key.
 
-Historical responsive capture of the same first-run state. UI pixels are unchanged.
+<a href="toefl-vocab/word-detail.png"><img src="toefl-vocab/word-detail.png" width="320" alt="Dictionary meaning and word family"></a>
 
-<img src="pm-signal-lab/first-run-mobile.png" width="320" alt="First-run worksheet on a narrow screen">
+Fresh local capture from public source, using the no-key dictionary path. Cropped to the upper portion of the dialog. Gemini was not exercised. · Chrome desktop · 2026-11-01
 
-[Open full size](pm-signal-lab/first-run-mobile.png)
+<a href="toefl-vocab/quiz-question.png"><img src="toefl-vocab/quiz-question.png" width="320" alt="Vocabulary practice question"></a>
 
-## OpenClaw Dashboard
+Fresh local capture with default demonstration progress. No learner records or provider result are shown. · Chrome desktop · 2026-11-01
 
-A local dashboard for inspecting an agent workspace without running actions.
+Public source; fresh local dictionary and practice-dialog captures. No provider-quality, learning-outcome or hosted-availability claim from this capture.
 
-**My work:** Read-only operations view, parser boundaries and public handoff documentation.
+[Project details](https://github.com/asdc163/toefl-vocab)
 
-**Decision:** Observation should not also grant a route to execute agent actions.
+## Node service mobile interface
 
-**AI scope:** Agent-operations tooling. The capture uses a fictional empty workspace, not a live agent run.
+A native module that a receiving app can embed without adopting the acceptance host.
 
-No hosted control-plane, authentication or live-agent-performance claim.
+Product flow, React Native implementation and host integration. A confirmation checks its quote snapshot again; services and navigation remain host responsibilities.
 
-[Case / source](https://github.com/altoslab447/openclaw-dashboard)
+<a href="node-interface/ios-network.png"><img src="node-interface/ios-network.png" width="320" alt="Node search and network cards"></a>
 
-### Read-only dashboard with an empty sample workspace
+Historical iOS component capture. Node identifiers and numeric values are removed. · iOS Simulator · 2026-10-31
 
-Chrome desktop · 2026-11-01 · 1470 × 717
+<a href="node-interface/android-network.png"><img src="node-interface/android-network.png" width="320" alt="Android network layout"></a>
 
-Fresh local capture using an isolated, explicitly fictional workspace. No live agent, private configuration or operational log is shown. UI pixels are unchanged.
+A separate Android capture of the same component. Identifiers and numeric values are removed. · Android Emulator · 2026-10-30
 
-<img src="openclaw-dashboard/synthetic-workspace.png" width="560" alt="Read-only dashboard with an empty sample workspace">
+Private frontend handoff with recorded simulator and emulator checks. No physical-device, live wallet, production service or store-release claim.
 
-[Open full size](openclaw-dashboard/synthetic-workspace.png)
+[Project details](https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/node-interface)
 
-## Telegram community bot
+## Spot trading interface
 
-Community participation, private owner controls and uncertain-delivery recovery.
+A standalone native frontend demonstration with local order state.
 
-**My work:** Participation rules, role checks, delivery behavior and commercial handoff review.
+Order-entry behavior, wallet state and native delivery. Session transitions use current reducer state; native platform adapters are separate from the demo controller.
 
-**Decision:** Recheck ownership for sensitive actions and preserve unknown delivery outcomes.
+<a href="spot-interface/ios-order-entry.png"><img src="spot-interface/ios-order-entry.png" width="320" alt="Simulated order entry"></a>
 
-**AI scope:** AI-assisted engineering. Bot rules and delivery decisions are deterministic.
+Native frontend demonstration. Cropped below the branded header; quote values, balances and custom asset labels are removed. · iOS Simulator · 2026-10-30
 
-The historical image predates owner-only private management and must not be used as current-flow evidence.
+<a href="spot-interface/ios-order-result.png"><img src="spot-interface/ios-order-result.png" width="820" alt="Local order confirmation result"></a>
 
-[Case / source](https://github.com/asdc163/telegram-community-bot-case-study)
+A simulated local order, not a real trade. Order values, times, balances and custom asset labels are removed. · iOS Simulator · 2026-10-30
 
-### Earlier operations menu
+<a href="spot-interface/android-large-text.png"><img src="spot-interface/android-large-text.png" width="320" alt="Narrow layout with larger text"></a>
 
-Telegram client · 2026-10-13 · 464 × 280
+Historical final responsive-check capture. Financial values are removed; slider percentages are fixed controls. · Android Emulator · 2026-10-30
 
-Historical excerpt captured before management moved to owner-only private chat. It illustrates feature coverage, not the current permission flow. Branding and chat context are cropped out.
+Community CLI handoff after an earlier Expo review build. No real funds or trades. Platform checks cover named versions and selected runs, not one final full sweep.
 
-<img src="telegram-community-bot/historical-command-inventory.png" width="464" alt="Earlier operations menu">
+[Project details](https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/spot-interface)
 
-[Open full size](telegram-community-bot/historical-command-inventory.png)
+## Community quest platform
+
+Participant submissions and operator review, including retries and corrections.
+
+Participant and operator flows, submission recovery and handoff. A retry must not award points twice, and an attachment needs an explicit access boundary.
+
+<a href="quest-platform/submission-waiting.png"><img src="quest-platform/submission-waiting.png" width="820" alt="Submission waiting for review"></a>
+
+Actual task dialog from a local frontend review. Cropped to exclude branding, account context and background data. · Chrome mobile viewport · 2026-10-30
+
+<a href="quest-platform/submission-needs-changes.png"><img src="quest-platform/submission-needs-changes.png" width="320" alt="Rejection reason and correction entry"></a>
+
+The same task after review requests a correction. Background and review timestamp are removed. · Chrome mobile viewport · 2026-10-30
+
+Private implementation handoff; public case with historical local-review screens. No public hosting, recipient deployment, real-wallet or live-provider claim.
+
+[Project details](https://github.com/asdc163/ai-builder-portfolio/tree/main/cases/quest-platform)
 
 ## VPN subscription system
 
 Subscription checkout, payment reconciliation and client-access states.
 
-**My work:** Renewal flow, payment-state boundaries, client recovery and engineering handoff review.
+Renewal flow, payment-state boundaries, client recovery and engineering handoff review. Returning from payment is not settlement; a pending order needs a clear recovery path.
 
-**Decision:** Returning from payment is not settlement; a pending order needs a clear recovery path.
+<a href="vpn-subscription/membership-renewal.png"><img src="vpn-subscription/membership-renewal.png" width="320" alt="Renewal plan selection"></a>
 
-**AI scope:** AI-assisted development; payment and access decisions follow deterministic rules.
+Historical engineering-review UI. Prices and payment-route details are removed; this image does not establish network availability. · iOS Simulator · 2026-10-15
 
-No real-funds, physical-device, target-network or consumer-release claim.
+<a href="vpn-subscription/payment-return-pending.png"><img src="vpn-subscription/payment-return-pending.png" width="820" alt="Payment return with an unfinished order"></a>
 
-[Case / source](https://github.com/asdc163/vpn-subscription-case-study)
+An unfinished-order state from historical review. Amounts and time values are removed. No real settlement is demonstrated. · iOS Simulator · 2026-10-15
 
-### Renewal plan selection
+Anonymized commercial engineering case with historical iOS review excerpts. No real-funds, physical-device, target-network or consumer-release claim.
 
-iOS Simulator · 2026-10-15 · 1110 × 1010
+[Project details](https://github.com/asdc163/vpn-subscription-case-study)
 
-Historical engineering-review UI. Prices and payment-route details are removed; this image does not establish network availability.
+## Telegram community bot
 
-<img src="vpn-subscription/membership-renewal.png" width="560" alt="Renewal plan selection">
+Community participation, private owner controls and uncertain-delivery recovery.
 
-[Open full size](vpn-subscription/membership-renewal.png)
+Participation rules, role checks, delivery behavior and commercial handoff review. Recheck ownership for sensitive actions and preserve unknown delivery outcomes.
 
-### Payment return with an unfinished order
+<a href="telegram-community-bot/historical-command-inventory.png"><img src="telegram-community-bot/historical-command-inventory.png" width="820" alt="Earlier operations menu"></a>
 
-iOS Simulator · 2026-10-15 · 1088 × 585
+Historical excerpt captured before management moved to owner-only private chat. It illustrates feature coverage, not the current permission flow. Branding and chat context are cropped out. · Telegram client · 2026-10-13
 
-An unfinished-order state from historical review. Amounts and time values are removed. No real settlement is demonstrated.
+Anonymized commercial case; only an earlier operations-menu excerpt is shared. The historical image predates owner-only private management and must not be used as current-flow evidence.
 
-<img src="vpn-subscription/payment-return-pending.png" width="560" alt="Payment return with an unfinished order">
-
-[Open full size](vpn-subscription/payment-return-pending.png)
+[Project details](https://github.com/asdc163/telegram-community-bot-case-study)
 
 ## CareLens
 
 An image-input care prototype with no-key mocks and seeded demonstration data.
 
-**My work:** Prototype flows, image-input API boundaries and explicit provider-versus-mock documentation.
+Prototype flows, image-input API boundaries and explicit provider-versus-mock documentation. Parse a model response against a schema, and keep a mock result distinct from recognition accuracy.
 
-**Decision:** Parse a model response against a schema, and keep a mock result distinct from recognition accuracy.
+<a href="carelens/prototype-landing.png"><img src="carelens/prototype-landing.png" width="820" alt="Care prototype landing page"></a>
 
-**AI scope:** Claude image-input integration in source; deterministic mocks without a key.
+Existing public prototype image with fictional sample content. Capture date is unknown; OCR and clinical performance were not validated. UI pixels are unchanged. · Repository screenshot · None
 
-Provider behavior, OCR accuracy, clinical correctness and deployment availability are unverified.
+<a href="carelens/prototype-dashboard.png"><img src="carelens/prototype-dashboard.png" width="320" alt="Prototype household overview"></a>
 
-[Case / source](https://github.com/asdc163/carelens)
+Existing prototype screenshot, cropped to the main panel. Sample names, email and numeric fields are removed. It is not clinical or model-performance evidence. · Repository screenshot · None
 
-### Care prototype landing page
+Public prototype; existing repository screenshots, capture date unknown. Provider behavior, OCR accuracy, clinical correctness and deployment availability are unverified.
 
-Repository screenshot · date unknown · 2880 × 1800
+[Project details](https://github.com/asdc163/carelens)
 
-Existing public prototype image with fictional sample content. Capture date is unknown; OCR and clinical performance were not validated. UI pixels are unchanged.
+## OpenClaw Dashboard
 
-<img src="carelens/prototype-landing.png" width="560" alt="Care prototype landing page">
+A local dashboard for inspecting an agent workspace without running actions.
 
-[Open full size](carelens/prototype-landing.png)
+Read-only operations view, parser boundaries and public handoff documentation. Observation should not also grant a route to execute agent actions.
 
-### Prototype household overview
+<a href="openclaw-dashboard/synthetic-workspace.png"><img src="openclaw-dashboard/synthetic-workspace.png" width="820" alt="Read-only dashboard with an empty sample workspace"></a>
 
-Repository screenshot · date unknown · 2360 × 2220
+Fresh local capture using an isolated, explicitly fictional workspace. No live agent, private configuration or operational log is shown. UI pixels are unchanged. · Chrome desktop · 2026-11-01
 
-Existing prototype screenshot, cropped to the main panel. Sample names, email and numeric fields are removed. It is not clinical or model-performance evidence.
+Public source; fresh local synthetic-workspace capture. No hosted control-plane, authentication or live-agent-performance claim.
 
-<img src="carelens/prototype-dashboard.png" width="560" alt="Prototype household overview">
-
-[Open full size](carelens/prototype-dashboard.png)
+[Project details](https://github.com/altoslab447/openclaw-dashboard)
 
 ## ethers-v6-codemod
 
 An AST-based JavaScript migration tool.
 
-**My work:** Public migration-tool implementation and documentation.
+Public migration-tool implementation and documentation. Match syntax before changing a source expression.
 
-**Decision:** Match syntax before changing a source expression.
+Public source; command-line tool without a product UI. No fabricated app screen. Tool execution was not rerun for this portfolio update.
 
-**AI scope:** Engineering tooling; no model-backed runtime is claimed.
-
-No fabricated app screen. Tool execution was not rerun for this portfolio update.
-
-[Case / source](https://github.com/asdc163/ethers-v6-codemod)
-
-This is a command-line tool without a product UI; no app screenshot was fabricated.
-
+[Project details](https://github.com/asdc163/ethers-v6-codemod)

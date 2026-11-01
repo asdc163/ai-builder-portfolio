@@ -44,4 +44,4 @@ The records include unit and type checks, dependency-boundary checks, selected i
 
 This portfolio write-up reviewed those records and the relevant implementation; it did not rerun the app. Physical devices, signed iOS distribution and integration with real backend, wallet and chain services remain receiver-side acceptance work.
 
-Development was AI-assisted. This anonymized case omits client identity, private source and releases, reference assets, account identifiers, balances and operating data.
+This anonymized case omits client identity, private source and releases, reference assets, account identifiers, balances and operating data.

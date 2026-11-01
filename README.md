@@ -1,41 +1,51 @@
-# Tommy's product work
+# Tommy — Product portfolio
 
-Technical Product Manager · AI Builder
+Technical Product Manager
 
-I build learning tools and automation, including optional AI features. This collection follows the product decisions through implementation, review and handoff.
+I build learning tools, native interfaces and the services behind them. My work spans product flows, implementation and handoff.
 
-[AI implementation](docs/ai-capability-evidence.md) · [Product screens](media/README.md) · [LinkedIn](https://www.linkedin.com/in/chia-en/) · [繁體中文](README.zh-TW.md)
+[中文](README.zh-TW.md) · [All product screens](media/README.md) · [LinkedIn](https://www.linkedin.com/in/chia-en/)
 
-<a href="media/toefl-vocab/word-detail.png"><img src="media/toefl-vocab/word-detail.png" width="185" height="251" alt="TOEFL Vocab: no-key dictionary meaning and word family"></a> <a href="media/node-interface/android-network.png"><img src="media/node-interface/android-network.png" width="208" height="251" alt="Node network: historical Android component, identifiers and values removed"></a>
+## PM Signal Lab
 
-TOEFL's no-key dictionary flow and a historical Android node component. The [image collection](media/README.md) includes capture dates, platforms and redaction notes.
+A worksheet for turning product notes into a decision you can trace back to its source.
 
-## Public code and AI review
+[![PM Signal Lab: a source review worksheet](media/pm-signal-lab/source-review-desktop.png)](https://github.com/asdc163/pm-signal-lab)
 
-**[TOEFL Vocab](https://github.com/asdc163/toefl-vocab)** keeps dictionary lookup and spaced repetition usable without a model key. Gemini extends the learning material. [Read the integration and error-handling notes](docs/ai-capability-evidence.md#toefl-vocab).
+*Historical desktop capture · fictional sample notes · August 2026*
 
-**[PM Signal Lab](https://github.com/asdc163/pm-signal-lab)** connects a source observation to a product decision. Its [AI launch-review exercise](https://github.com/asdc163/pm-signal-lab/tree/main/playbooks/ai-launch-review) includes a policy, authored responses and a scoring key. An unsupported refund approval holds the fictional pilot.
+I kept the source line beside the claim it supports, so a polished summary cannot quietly become evidence. The repository also includes a fictional AI launch-review exercise with sample responses and a scoring key.
 
-## Recent builds
+[Code & product walkthrough](https://github.com/asdc163/pm-signal-lab) · [Launch-review exercise](https://github.com/asdc163/pm-signal-lab/tree/main/playbooks/ai-launch-review)
 
-| Case | The decision behind the interface |
+## TOEFL Vocab
+
+A study app that connects word lookup, related word forms and spaced repetition.
+
+<a href="media/toefl-vocab/word-detail.png"><img src="media/toefl-vocab/word-detail.png" width="270" alt="TOEFL Vocab dictionary with related word forms"></a> <a href="media/toefl-vocab/quiz-question.png"><img src="media/toefl-vocab/quiz-question.png" width="307" alt="TOEFL Vocab multiple-choice practice"></a>
+
+*Local demo captures · built-in dictionary and quiz · November 2026*
+
+Lookup and review work without a model key. Gemini is an optional extension for learning material; these screens show the no-key flow.
+
+[Code & setup](https://github.com/asdc163/toefl-vocab) · [Model integration notes](docs/ai-capability-evidence.md#toefl-vocab)
+
+## Commercial work
+
+Selected interface and service work, published as anonymized cases. Client source, branding and operating data stay private.
+
+| Product | What I worked on |
 | --- | --- |
-| [Node service mobile interface](cases/node-interface/README.md) | Separate an embeddable React Native module from its acceptance host; recheck a quote before confirmation. |
-| [Community quest platform](cases/quest-platform/README.md) | Preserve submission and correction states, protect attachments and prevent a retry from awarding points twice. |
-| [Spot trading interface](cases/spot-interface/README.md) | Fix a stale-state race across wallet changes and hand off native iOS and Android projects. All trading is simulated. |
+| [Node service · mobile](cases/node-interface/README.md) | An embeddable React Native module, quote confirmation and the host integration contract. |
+| [Spot interface · mobile](cases/spot-interface/README.md) | Order entry, wallet switching and state consistency. Quotes and trades are simulated. |
+| [Community quest platform](cases/quest-platform/README.md) | Submission, review and resubmission, with retry-safe points and attachment access. |
+| [Telegram community bot](https://github.com/asdc163/telegram-community-bot-case-study) | Private owner controls, permission changes and recovery after uncertain delivery. |
+| [VPN subscriptions](https://github.com/asdc163/vpn-subscription-case-study) | Checkout, renewal and reconciling payment with client access. |
 
-These are anonymized engineering cases. Each records its own contribution, delivery scope and verification limits. Commercial source and client materials remain private.
+Each case links to selected screens and records its delivery status. Simulator checks, local fixtures and historical captures are identified in context.
 
-## Commercial systems
+## Other projects
 
-- [Telegram community bot](https://github.com/asdc163/telegram-community-bot-case-study): community participation, private owner controls and uncertain-delivery recovery.
-- [VPN subscription system](https://github.com/asdc163/vpn-subscription-case-study): checkout, payment reconciliation, renewals and client access.
+[CareLens](https://github.com/asdc163/carelens) explores family-care coordination with image input and no-key mocks. It is a prototype, with no clinical or model-accuracy claim. [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) is a read-only workspace view. [ethers-v6-codemod](https://github.com/asdc163/ethers-v6-codemod) covers selected AST-based migration patterns.
 
-## Notes
-
-- [Valid JSON can still be wrong](notes/structured-output.md)
-- [Product decisions](docs/tpm-review-guide.md)
-
-More code: [OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard), a local read-only agent-workspace view; [CareLens](https://github.com/asdc163/carelens), an image-input prototype with no-key mocks; [ethers-v6-codemod](https://github.com/asdc163/ethers-v6-codemod), an AST migration tool.
-
-[How I build](docs/how-i-build.md) · [Publication policy](docs/publication-policy.md) · [Website assets](media/WEBSITE-HANDOFF.md)
+[Product decisions](docs/tpm-review-guide.md) · [Technical notes](notes/structured-output.md) · [Website assets](media/WEBSITE-HANDOFF.md)

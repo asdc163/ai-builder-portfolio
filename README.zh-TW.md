@@ -1,41 +1,51 @@
-# Tommy 的產品作品
+# Tommy 的產品作品集
 
-Technical Product Manager · AI Builder
+Technical Product Manager
 
-我做學習工具、自動化與選配 AI 功能。這裡整理產品決策如何落到實作、驗收及交接。
+我做學習工具、手機介面，以及支撐產品流程的服務。從規劃、實作到交接，這裡保留能公開展示的作品與取捨。
 
-[AI 實作](docs/ai-capability-evidence.zh-TW.md) · [產品畫面](media/README.zh-TW.md) · [LinkedIn](https://www.linkedin.com/in/chia-en/) · [English](README.md)
+[English](README.md) · [完整產品畫面](media/README.zh-TW.md) · [LinkedIn](https://www.linkedin.com/in/chia-en/)
 
-<a href="media/toefl-vocab/word-detail.png"><img src="media/toefl-vocab/word-detail.png" width="185" height="251" alt="TOEFL Vocab：無金鑰的字義與詞性家族流程"></a> <a href="media/node-interface/android-network.png"><img src="media/node-interface/android-network.png" width="208" height="251" alt="節點網路：歷史 Android 元件，識別碼與數值已移除"></a>
+## PM Signal Lab
 
-畫面分別是 TOEFL 的無金鑰字典流程，以及歷史 Android 節點元件。[圖庫](media/README.zh-TW.md)保留日期、平台及去識別說明。
+把產品筆記整理成能回查來源的決策工作表。
 
-## 公開程式與 AI 評估
+[![PM Signal Lab：來源審查工作表](media/pm-signal-lab/source-review-desktop.png)](https://github.com/asdc163/pm-signal-lab)
 
-**[TOEFL Vocab](https://github.com/asdc163/toefl-vocab)** 的查字與間隔複習不依賴模型金鑰，Gemini 用來擴充學習素材。[實作筆記](docs/ai-capability-evidence.zh-TW.md#toefl-vocab)說明模型整合與錯誤處理。
+*歷史桌面畫面 · 虛構示範筆記 · 2026 年 8 月*
 
-**[PM Signal Lab](https://github.com/asdc163/pm-signal-lab)** 把來源觀察連到產品決策。[AI 上線審查練習](https://github.com/asdc163/pm-signal-lab/tree/main/playbooks/ai-launch-review)附有政策、自編回覆與評分規則；其中一筆無依據的退款核准，足以暫停虛構的試點。
+我把原始語句留在主張旁邊，讓審查者能看出結論從哪裡來。程式庫也附有 AI 上線審查練習，包含自編回覆與評分規則。
 
-## 近期實作
+[程式與產品說明](https://github.com/asdc163/pm-signal-lab) · [上線審查練習](https://github.com/asdc163/pm-signal-lab/tree/main/playbooks/ai-launch-review)
 
-| 案例 | 介面背後的決定 |
+## TOEFL Vocab
+
+從查字、詞性衍生到間隔複習，串成一段完整的學習流程。
+
+<a href="media/toefl-vocab/word-detail.png"><img src="media/toefl-vocab/word-detail.png" width="270" alt="TOEFL Vocab 字義與詞性家族"></a> <a href="media/toefl-vocab/quiz-question.png"><img src="media/toefl-vocab/quiz-question.png" width="307" alt="TOEFL Vocab 選擇題練習"></a>
+
+*本機示範截圖 · 內建字典與測驗 · 2026 年 11 月*
+
+查字與複習不需要模型金鑰。Gemini 用來擴充學習素材，這裡展示的是無金鑰流程。
+
+[程式與啟動方式](https://github.com/asdc163/toefl-vocab) · [模型整合筆記](docs/ai-capability-evidence.zh-TW.md#toefl-vocab)
+
+## 商用產品
+
+以下用匿名案例呈現介面與服務工作；客戶程式、原品牌及營運資料維持私有。
+
+| 產品 | 我的工作 |
 | --- | --- |
-| [節點服務手機介面](cases/node-interface/README.zh-TW.md) | 把可嵌入的 React Native 模組與驗收宿主分開，並在確認前重新檢查報價。 |
-| [社群任務平台](cases/quest-platform/README.zh-TW.md) | 保留送件與補件狀態、限制附件存取，並避免重試時重複發點。 |
-| [現貨交易介面](cases/spot-interface/README.zh-TW.md) | 修正錢包切換時的舊狀態競態，交付 iOS、Android 原生工程；交易均為模擬。 |
+| [節點服務手機介面](cases/node-interface/README.zh-TW.md) | 可嵌入的 React Native 模組、報價確認與宿主整合契約。 |
+| [現貨交易介面](cases/spot-interface/README.zh-TW.md) | 委託操作、錢包切換與狀態一致性；報價與交易均為模擬。 |
+| [社群任務平台](cases/quest-platform/README.zh-TW.md) | 送件、審核與補件流程，處理重試發點及附件權限。 |
+| [Telegram 社群機器人](https://github.com/asdc163/telegram-community-bot-case-study) | 群主私訊管理、權限變動與投遞結果不明時的恢復。 |
+| [VPN 訂閱系統](https://github.com/asdc163/vpn-subscription-case-study) | 結帳、續費，以及付款狀態與客戶端權限的對帳。 |
 
-以上為匿名工程案例，各自交代我的工作、交付範圍與驗證界線。商用原始碼和客戶資料維持私有。
+各案例附有篩選後的畫面與交付狀態，並在原處標明模擬器、本機資料與歷史截圖的範圍。
 
-## 商用系統
+## 其他作品
 
-- [Telegram 社群營運機器人](https://github.com/asdc163/telegram-community-bot-case-study)：社群參與、群主私訊管理，以及投遞結果不明時的恢復。
-- [VPN 訂閱系統](https://github.com/asdc163/vpn-subscription-case-study)：結帳、付款對帳、續費與客戶端權限。
+[CareLens](https://github.com/asdc163/carelens) 是家庭照護協作原型，探索圖片輸入與無金鑰 mock，尚未建立醫療或模型準確率證據。[OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard) 提供唯讀工作區視圖；[ethers-v6-codemod](https://github.com/asdc163/ethers-v6-codemod) 處理特定 AST 程式遷移模式。
 
-## 筆記
-
-- [JSON 格式正確，內容仍然可能錯](notes/structured-output.zh-TW.md)
-- [產品取捨](docs/tpm-review-guide.zh-TW.md)
-
-其他程式：[OpenClaw Dashboard](https://github.com/altoslab447/openclaw-dashboard)，本機唯讀代理工作區看板；[CareLens](https://github.com/asdc163/carelens)，具備無金鑰 mock 的圖片輸入原型；[ethers-v6-codemod](https://github.com/asdc163/ethers-v6-codemod)，AST 程式遷移工具。
-
-[開發方式](docs/how-i-build.md) · [公開政策](docs/publication-policy.md) · [網站素材](media/WEBSITE-HANDOFF.md)
+[產品取捨](docs/tpm-review-guide.zh-TW.md) · [技術筆記](notes/structured-output.zh-TW.md) · [網站素材](media/WEBSITE-HANDOFF.md)

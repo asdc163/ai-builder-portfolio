@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedOn": "2026-11-01",
+  "updatedOn": "2026-11-02",
   "languages": [
     "en",
     "zh-TW"
@@ -27,16 +27,16 @@
         "zh-TW": "在手機查看報價、確認操作，並檢視節點網路。"
       },
       "contribution": {
-        "en": "Product flow, AI-assisted implementation, integration boundaries and platform acceptance review.",
-        "zh-TW": "產品流程、AI 協作實作、整合邊界與分平台驗收整理。"
+        "en": "Product flow, React Native implementation and host integration.",
+        "zh-TW": "產品流程、React Native 實作與宿主整合。"
       },
       "decision": {
         "en": "A confirmation checks its quote snapshot again; services and navigation remain host responsibilities.",
         "zh-TW": "確認時重新檢查報價快照；正式服務與導覽由宿主負責。"
       },
       "aiScope": {
-        "en": "AI-assisted engineering; the demonstrated product behavior is deterministic.",
-        "zh-TW": "AI 協作開發；展示的產品行為依確定規則執行。"
+        "en": "The documented interface and service decisions follow explicit application rules.",
+        "zh-TW": "本案例的介面與服務決策依明確程式規則執行。"
       },
       "deliveryStatus": {
         "en": "Private frontend handoff with recorded simulator and emulator checks.",
@@ -75,16 +75,16 @@
         "zh-TW": "完成任務、理解審核狀態，並修正被退回的資料。"
       },
       "contribution": {
-        "en": "Participant and operator flows, implementation, recovery rules and handoff review.",
-        "zh-TW": "參與者與營運流程、實作、恢復規則與交接審查。"
+        "en": "Participant and operator flows, submission recovery and handoff.",
+        "zh-TW": "參與者與管理端流程、補件恢復及交接。"
       },
       "decision": {
         "en": "A retry must not award points twice, and an attachment needs an explicit access boundary.",
         "zh-TW": "重試不能重複發點；附件必須有明確的存取邊界。"
       },
       "aiScope": {
-        "en": "AI-assisted delivery. Local task and review records do not establish live model or provider behavior.",
-        "zh-TW": "AI 協作交付；本機任務及審核紀錄不代表真實模型或外部服務已驗證。"
+        "en": "The documented interface and service decisions follow explicit application rules.",
+        "zh-TW": "本案例的介面與服務決策依明確程式規則執行。"
       },
       "deliveryStatus": {
         "en": "Private implementation handoff; public case with historical local-review screens.",
@@ -126,16 +126,16 @@
         "zh-TW": "輸入委託、查看結果，並撤銷尚未完成的示範掛單。"
       },
       "contribution": {
-        "en": "Screen behavior, state consistency, native handoff and separate platform review.",
-        "zh-TW": "畫面行為、狀態一致性、原生交接與分平台審查。"
+        "en": "Order-entry behavior, wallet state and native delivery.",
+        "zh-TW": "委託介面、錢包狀態與原生工程交付。"
       },
       "decision": {
         "en": "Session transitions use current reducer state; native platform adapters are separate from the demo controller.",
         "zh-TW": "Session 轉換使用 reducer 當下狀態；原生介面與示範控制器分開。"
       },
       "aiScope": {
-        "en": "AI-assisted development; quotes, orders and signing are local simulations.",
-        "zh-TW": "AI 協作開發；報價、訂單及簽名均為本機模擬。"
+        "en": "The documented interface and service decisions follow explicit application rules.",
+        "zh-TW": "本案例的介面與服務決策依明確程式規則執行。"
       },
       "deliveryStatus": {
         "en": "Community CLI handoff after an earlier Expo review build.",
@@ -175,8 +175,8 @@
         "zh-TW": "查單字、理解詞性家族，並練習主動回想。"
       },
       "contribution": {
-        "en": "Learning flow, dictionary organization, optional model paths and AI-assisted implementation.",
-        "zh-TW": "學習流程、詞庫整理、模型選配路徑與 AI 協作實作。"
+        "en": "Study flow, dictionary data and optional Gemini features.",
+        "zh-TW": "學習流程、字典資料與選配 Gemini 功能。"
       },
       "decision": {
         "en": "The core dictionary and review task should remain usable without a model key.",
@@ -224,8 +224,8 @@
         "zh-TW": "判斷一個觀察能支持什麼主張，同時保留原始出處。"
       },
       "contribution": {
-        "en": "Source-to-decision workflow, evidence boundaries and an authored AI launch-review exercise.",
-        "zh-TW": "從來源到決策的流程、證據界線，以及自編 AI 上線審查練習。"
+        "en": "Worksheet design, source review and product decision exercises.",
+        "zh-TW": "工作表設計、來源審查與產品決策練習。"
       },
       "decision": {
         "en": "A polished response is not enough; unsupported decisions need an explicit review gate.",
@@ -250,10 +250,11 @@
         "zh-TW": "截圖不代表新一輪正式部署、真人研究或成長成效。"
       },
       "imageIds": [
+        "source-review-desktop",
         "first-run-desktop",
         "first-run-mobile"
       ],
-      "coverImageId": "first-run-desktop",
+      "coverImageId": "source-review-desktop",
       "imageStatus": "available",
       "projectDates": null
     },
@@ -328,8 +329,8 @@
         "zh-TW": "敏感操作重新核對群主身分，並保留投遞結果不明的狀態。"
       },
       "aiScope": {
-        "en": "AI-assisted engineering. Bot rules and delivery decisions are deterministic.",
-        "zh-TW": "AI 協作開發；機器人規則與投遞決策依確定程式規則執行。"
+        "en": "The documented interface and service decisions follow explicit application rules.",
+        "zh-TW": "本案例的介面與服務決策依明確程式規則執行。"
       },
       "deliveryStatus": {
         "en": "Anonymized commercial case; only an earlier operations-menu excerpt is shared.",
@@ -376,8 +377,8 @@
         "zh-TW": "從付款頁返回不等於結算完成；未完成訂單需要清楚的恢復入口。"
       },
       "aiScope": {
-        "en": "AI-assisted development; payment and access decisions follow deterministic rules.",
-        "zh-TW": "AI 協作開發；付款與權限判斷依確定規則執行。"
+        "en": "The documented interface and service decisions follow explicit application rules.",
+        "zh-TW": "本案例的介面與服務決策依明確程式規則執行。"
       },
       "deliveryStatus": {
         "en": "Anonymized commercial engineering case with historical iOS review excerpts.",
@@ -838,6 +839,45 @@
       "coverEligible": false,
       "treatment": "crop-and-opaque-mask",
       "sha256": "2ea55b2452bc494e223329515b1ffed73eb4173ad5c96913d4b8b2193dc99ea8"
+    },
+    {
+      "id": "source-review-desktop",
+      "projectId": "pm-signal-lab",
+      "path": "media/pm-signal-lab/source-review-desktop.png",
+      "width": 1440,
+      "height": 900,
+      "alt": {
+        "en": "PM Signal Lab worksheet with a fictional support review and expandable source records",
+        "zh-TW": "PM Signal Lab 工作表：虛構客服審查與可展開的來源紀錄"
+      },
+      "caption": {
+        "en": "Desktop worksheet with fictional sample notes. Historical local capture, August 16, 2026.",
+        "zh-TW": "桌面工作表，使用虛構示範筆記。2026 年 8 月 16 日歷史本機截圖。"
+      },
+      "captureDate": "2026-08-16",
+      "platform": "Chrome desktop",
+      "coverEligible": true,
+      "treatment": "metadata-only",
+      "sha256": "b9414659561da07ca3db8363de5326261b3814cd98d603a511fb19d9f1324a54"
     }
-  ]
+  ],
+  "presentation": {
+    "featuredProjectIds": [
+      "pm-signal-lab",
+      "toefl-vocab"
+    ],
+    "heroImageId": "source-review-desktop",
+    "secondaryImageIds": [
+      "word-detail",
+      "quiz-question"
+    ],
+    "commercialGalleryProjectIds": [
+      "node-interface",
+      "spot-interface",
+      "quest-platform",
+      "telegram-community-bot",
+      "vpn-subscription"
+    ],
+    "note": "Product screens first; preserve each asset caption and each project delivery limit."
+  }
 }

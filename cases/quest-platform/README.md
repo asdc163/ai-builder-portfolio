@@ -39,4 +39,4 @@ The final delivery records cover extracting the package into a fresh location, b
 
 This is a private implementation with a local handoff verification record. It is not presented as a public live service. Recipient-host acceptance, real wallet-provider use and configured external services need their own verification. The portfolio update did not rerun the application.
 
-Development was AI-assisted. Task verification, permissions and points use explicit application rules. Client identity, source, deployments, accounts, evidence files and operating data are omitted.
+Task verification, permissions and points use explicit application rules. Client identity, source, deployments, accounts, evidence files and operating data are omitted.

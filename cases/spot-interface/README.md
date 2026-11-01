@@ -45,4 +45,4 @@ The latest native delivery records include selected iOS Simulator journeys on th
 
 The records cover different named versions and selected runs, not a single full pass on both platforms. I reviewed those boundaries and the state fix for this case; this portfolio update did not rerun the app. Physical devices, a store release, complete assistive-technology coverage and real trading services remain outside the demonstrated scope.
 
-Development was AI-assisted. The simulated trading behavior is deterministic. Commercial source, original branding, reference assets, private releases, recipient details and account data are omitted from the public case.
+The simulated trading behavior is deterministic. Commercial source, original branding, reference assets, private releases, recipient details and account data are omitted from the public case.
